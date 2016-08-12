@@ -11,6 +11,6 @@ import UIKit
 class ThingsViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.SetNavigationBarShowRightBarButtonItem(true)
+        SetNavigationBarShowRightBarButtonItem(true)
     }
 }

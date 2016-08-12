@@ -90,7 +90,7 @@ class RightRefreshView: UIView,iCarouselDelegate,iCarouselDataSource {
     var dataSource: RightPullToRefreshViewDataSource? = nil
     
    
-    
+    //Life Cycle
     override init(frame: CGRect) {
         super.init(frame: frame)
         isNeedRefresh = false
@@ -99,14 +99,53 @@ class RightRefreshView: UIView,iCarouselDelegate,iCarouselDataSource {
         lastItemIndex = -1
         setupViews()
     }
-//    override func delete(sender: AnyObject?) {
-//        delegate = nil
-//        dataSource = nil
-//        Carouse .removeFromSuperview()
-//        refreshLabel .removeFromSuperview()
-//        
-//    }
-
+    override func delete(sender: AnyObject?) {
+        delegate = nil
+        dataSource = nil
+        Carouse .removeFromSuperview()
+        refreshLabel .removeFromSuperview()
+        
+    }
+    
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    
+    //getter
+    var currentItemIndex: NSInteger {
+        get {
+            return Carouse.currentItemIndex
+            
+        }
+    }
+    
+    var currentItemView: UIView {
+        get {
+            return Carouse.currentItemView!
+        }
+        
+    }
+    var contentView: UIView {
+        get {
+            return Carouse.contentView
+            
+        }
+        
+    }
+    var RefreshViewDataSource: RightPullToRefreshViewDataSource? {
+        didSet {
+//            if self.dataSource != RefreshViewDataSource {
+                self.dataSource = RefreshViewDataSource
+            Carouse.reloadData()
+//            }
+        
+        
+        }
+    
+    
+    }
     private func setupViews() {
         Carouse.frame = self.bounds
         ({(ZDiCarouse: iCarousel) in
@@ -117,6 +156,7 @@ class RightRefreshView: UIView,iCarouselDelegate,iCarouselDataSource {
             ZDiCarouse.pagingEnabled = true
             ZDiCarouse.bounceDistance = 0.5
             ZDiCarouse.decelerationRate = 0.6
+            ZDiCarouse.backgroundColor = UIColor.redColor()
             self.addSubview(ZDiCarouse)
         
         }(Carouse))
@@ -181,10 +221,6 @@ class RightRefreshView: UIView,iCarouselDelegate,iCarouselDataSource {
         if isNeedRefresh {
             var frame = refreshLabel.frame
             frame.origin.x = 0 - leftRefreshLabelWidth*1.5 - 20
-//            UIView.animateWithDuration(0.2, animations: { 
-//                self.iCarouse.contentOffset = CGSizeMake(0, 0)
-//                self.refreshLabel.frame = frame
-//            } )
             UIView.animateWithDuration(0.2, animations: { 
                 self.Carouse.contentOffset = CGSizeMake(0, 0)
                 self.refreshLabel.frame = frame
@@ -196,37 +232,13 @@ class RightRefreshView: UIView,iCarouselDelegate,iCarouselDataSource {
         }
     
     }
-    //getter
-   var currentItemIndex: NSInteger {
-        get {
-            return Carouse.currentItemIndex
-        
-        }
-    }
-    
-    var currentItemView: UIView {
-        get {
-            return Carouse.currentItemView!
-        }
-    
-    }
-    var contentView: UIView {
-        get {
-            return Carouse.contentView
-        
-        }
-    
-    }
+   
 //    var delegate: RightPullToRefreshViewDelegate {
 //       
 //    
 //    
 //    }
-    
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
+ 
     
     //Delegate&DataSource
     func numberOfItemsInCarousel(carousel: iCarousel) -> Int
@@ -235,11 +247,9 @@ class RightRefreshView: UIView,iCarouselDelegate,iCarouselDataSource {
             numberOfItems = (dataSource?.numberOfItemsInRightPullRefreshView(self))!
              return numberOfItems
         }else {
-            return 0
+         return 0
         
         }
-        
-       
         
     }
     

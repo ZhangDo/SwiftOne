@@ -12,62 +12,64 @@ provides-member:
 - ["P8SwiftOne32RightPullToRefreshViewDataSource", ""]
 - ["C8SwiftOne16RightRefreshView", ""]
 provides-dynamic-lookup:
-- "carousel"
-- "currentItemIndex"
-- "currentItemView"
-- "inisertItemIndex"
-- "numberOfItemsInCarousel"
-- "reloaData"
 - "carouselItemWidth"
-- "carouselDidEndScrollingAnimation"
-- "carouselDidEndDragging"
-- "contentView"
-- "reloadItemIndex"
 - "carouselCurrentItemIndexDidChange"
 - "carouselDidScroll"
-- "itemViewIndex"
+- "carouselDidEndDragging"
+- "delete"
+- "numberOfItemsInCarousel"
 - "endRefresh"
+- "itemViewIndex"
+- "carousel"
+- "inisertItemIndex"
+- "currentItemIndex"
+- "currentItemView"
+- "reloaData"
+- "carouselDidEndScrollingAnimation"
+- "reloadItemIndex"
+- "contentView"
 depends-top-level:
-- "CGFloat"
-- !private "NSTextAlignment"
-- !private "fabs"
-- !private "&&"
-- "CGRect"
-- "StringLiteralType"
-- !private "fatalError"
+- "iCarouselDelegate"
+- "AnyObject"
+- !private "/"
 - "iCarouselDataSource"
+- !private "+"
+- !private "iCarouselType"
+- "UIView"
+- "NSCoder"
+- "NSInteger"
+- !private "CGRectGetMaxX"
+- !private "CGRectGetWidth"
+- !private "CGRectGetMaxY"
+- !private "&&"
+- !private "fabs"
+- !private "!"
+- !private "NSTextAlignment"
+- !private ">="
+- "CGFloat"
+- !private "UIFont"
+- !private "BooleanLiteralType"
+- "CGRect"
+- !private "-"
+- "RightPullToRefreshViewDelegate"
+- "Void"
 - !private "+="
 - !private "!="
-- "iCarouselDelegate"
-- "Bool"
-- "NSCoder"
-- "RightRefreshView"
-- !private "+"
-- "RightPullToRefreshViewDataSource"
-- !private "CGRectGetWidth"
-- !private "UIFont"
-- "UIView"
-- !private "CGRectGetMaxY"
-- "iCarousel"
-- !private "<="
-- !private "!"
-- !private "-"
-- !private "BooleanLiteralType"
-- !private "/"
-- !private "CGRectGetMaxX"
 - !private "CGRectZero"
-- !private ">="
-- !private "CGRectGetHeight"
-- !private "iCarouselType"
-- "NSInteger"
-- "RightPullToRefreshViewDelegate"
 - "Int"
-- !private "*"
-- !private "CGSizeMake"
+- !private "fatalError"
 - !private "CGRectMake"
+- "RightPullToRefreshViewDataSource"
+- "iCarousel"
 - !private "UIColor"
+- !private "StringLiteralType"
+- "RightRefreshView"
 - "UILabel"
-- "Void"
+- !private "<="
+- !private "*"
+- !private "CGRectGetHeight"
+- "Bool"
+- !private "CGSizeMake"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["Ps16AbsoluteValuable", "Stride"]
@@ -85,12 +87,14 @@ depends-member:
 - ["Ps9AnyObject", "Int"]
 - ["Ps9AnyObject", "NSInteger"]
 - !private ["Ps9AnyObject", "NSTextAlignment"]
+- ["Ps9AnyObject", "RefreshViewDataSource"]
 - !private ["Ps9AnyObject", "UIColor"]
 - !private ["Ps9AnyObject", "UIFont"]
 - ["Ps9AnyObject", "UILabel"]
 - !private ["Ps9AnyObject", "UIView"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "animateWithDuration"]
+- !private ["Ps9AnyObject", "backgroundColor"]
 - !private ["Ps9AnyObject", "bounceDistance"]
 - !private ["Ps9AnyObject", "bounds"]
 - ["Ps9AnyObject", "canScrollBack"]
@@ -111,6 +115,7 @@ depends-member:
 - ["Ps9AnyObject", "dataSource"]
 - !private ["Ps9AnyObject", "decelerationRate"]
 - ["Ps9AnyObject", "delegate"]
+- ["Ps9AnyObject", "delete"]
 - ["Ps9AnyObject", "draggedx"]
 - ["Ps9AnyObject", "endRefresh"]
 - !private ["Ps9AnyObject", "fabs"]
@@ -132,11 +137,13 @@ depends-member:
 - ["Ps9AnyObject", "numberOfItemsInCarousel"]
 - ["Ps9AnyObject", "numberOfPlaceholdersInCarousel"]
 - !private ["Ps9AnyObject", "pagingEnabled"]
+- !private ["Ps9AnyObject", "redColor"]
 - ["Ps9AnyObject", "refreshLabel"]
 - ["Ps9AnyObject", "reloaData"]
 - !private ["Ps9AnyObject", "reloadData"]
 - !private ["Ps9AnyObject", "reloadItemAtIndex"]
 - ["Ps9AnyObject", "reloadItemIndex"]
+- !private ["Ps9AnyObject", "removeFromSuperview"]
 - !private ["Ps9AnyObject", "scrollOffset"]
 - !private ["Ps9AnyObject", "setNeedsLayout"]
 - ["Ps9AnyObject", "setupViews"]
@@ -176,6 +183,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "IntegerLiteralType"]
 - ["Ps11CVarArgType", "NSInteger"]
 - !private ["Ps11CVarArgType", "NSTextAlignment"]
+- ["Ps11CVarArgType", "RefreshViewDataSource"]
 - !private ["Ps11CVarArgType", "Stride"]
 - !private ["Ps11CVarArgType", "UIColor"]
 - !private ["Ps11CVarArgType", "UIFont"]
@@ -183,6 +191,7 @@ depends-member:
 - !private ["Ps11CVarArgType", "UIView"]
 - !private ["Ps11CVarArgType", "addSubview"]
 - !private ["Ps11CVarArgType", "animateWithDuration"]
+- !private ["Ps11CVarArgType", "backgroundColor"]
 - !private ["Ps11CVarArgType", "bounceDistance"]
 - !private ["Ps11CVarArgType", "bounds"]
 - ["Ps11CVarArgType", "canScrollBack"]
@@ -203,6 +212,7 @@ depends-member:
 - ["Ps11CVarArgType", "dataSource"]
 - !private ["Ps11CVarArgType", "decelerationRate"]
 - ["Ps11CVarArgType", "delegate"]
+- ["Ps11CVarArgType", "delete"]
 - ["Ps11CVarArgType", "draggedx"]
 - ["Ps11CVarArgType", "endRefresh"]
 - !private ["Ps11CVarArgType", "fabs"]
@@ -224,11 +234,13 @@ depends-member:
 - ["Ps11CVarArgType", "numberOfItemsInCarousel"]
 - ["Ps11CVarArgType", "numberOfPlaceholdersInCarousel"]
 - !private ["Ps11CVarArgType", "pagingEnabled"]
+- !private ["Ps11CVarArgType", "redColor"]
 - ["Ps11CVarArgType", "refreshLabel"]
 - ["Ps11CVarArgType", "reloaData"]
 - !private ["Ps11CVarArgType", "reloadData"]
 - !private ["Ps11CVarArgType", "reloadItemAtIndex"]
 - ["Ps11CVarArgType", "reloadItemIndex"]
+- !private ["Ps11CVarArgType", "removeFromSuperview"]
 - !private ["Ps11CVarArgType", "scrollOffset"]
 - !private ["Ps11CVarArgType", "setNeedsLayout"]
 - ["Ps11CVarArgType", "setupViews"]
@@ -256,12 +268,14 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "Int"]
 - ["Ps28CustomDebugStringConvertible", "NSInteger"]
 - !private ["Ps28CustomDebugStringConvertible", "NSTextAlignment"]
+- ["Ps28CustomDebugStringConvertible", "RefreshViewDataSource"]
 - !private ["Ps28CustomDebugStringConvertible", "UIColor"]
 - !private ["Ps28CustomDebugStringConvertible", "UIFont"]
 - ["Ps28CustomDebugStringConvertible", "UILabel"]
 - !private ["Ps28CustomDebugStringConvertible", "UIView"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "animateWithDuration"]
+- !private ["Ps28CustomDebugStringConvertible", "backgroundColor"]
 - !private ["Ps28CustomDebugStringConvertible", "bounceDistance"]
 - !private ["Ps28CustomDebugStringConvertible", "bounds"]
 - ["Ps28CustomDebugStringConvertible", "canScrollBack"]
@@ -282,6 +296,7 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "dataSource"]
 - !private ["Ps28CustomDebugStringConvertible", "decelerationRate"]
 - ["Ps28CustomDebugStringConvertible", "delegate"]
+- ["Ps28CustomDebugStringConvertible", "delete"]
 - ["Ps28CustomDebugStringConvertible", "draggedx"]
 - ["Ps28CustomDebugStringConvertible", "endRefresh"]
 - !private ["Ps28CustomDebugStringConvertible", "fabs"]
@@ -303,11 +318,13 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "numberOfItemsInCarousel"]
 - ["Ps28CustomDebugStringConvertible", "numberOfPlaceholdersInCarousel"]
 - !private ["Ps28CustomDebugStringConvertible", "pagingEnabled"]
+- !private ["Ps28CustomDebugStringConvertible", "redColor"]
 - ["Ps28CustomDebugStringConvertible", "refreshLabel"]
 - ["Ps28CustomDebugStringConvertible", "reloaData"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadData"]
 - !private ["Ps28CustomDebugStringConvertible", "reloadItemAtIndex"]
 - ["Ps28CustomDebugStringConvertible", "reloadItemIndex"]
+- !private ["Ps28CustomDebugStringConvertible", "removeFromSuperview"]
 - !private ["Ps28CustomDebugStringConvertible", "scrollOffset"]
 - !private ["Ps28CustomDebugStringConvertible", "setNeedsLayout"]
 - ["Ps28CustomDebugStringConvertible", "setupViews"]
@@ -333,6 +350,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "IntegerLiteralType"]
 - ["Ps23CustomStringConvertible", "NSInteger"]
 - !private ["Ps23CustomStringConvertible", "NSTextAlignment"]
+- ["Ps23CustomStringConvertible", "RefreshViewDataSource"]
 - !private ["Ps23CustomStringConvertible", "Stride"]
 - !private ["Ps23CustomStringConvertible", "UIColor"]
 - !private ["Ps23CustomStringConvertible", "UIFont"]
@@ -341,6 +359,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "animateWithDuration"]
+- !private ["Ps23CustomStringConvertible", "backgroundColor"]
 - !private ["Ps23CustomStringConvertible", "bounceDistance"]
 - !private ["Ps23CustomStringConvertible", "bounds"]
 - ["Ps23CustomStringConvertible", "canScrollBack"]
@@ -361,6 +380,7 @@ depends-member:
 - ["Ps23CustomStringConvertible", "dataSource"]
 - !private ["Ps23CustomStringConvertible", "decelerationRate"]
 - ["Ps23CustomStringConvertible", "delegate"]
+- ["Ps23CustomStringConvertible", "delete"]
 - ["Ps23CustomStringConvertible", "draggedx"]
 - ["Ps23CustomStringConvertible", "endRefresh"]
 - !private ["Ps23CustomStringConvertible", "fabs"]
@@ -382,11 +402,13 @@ depends-member:
 - ["Ps23CustomStringConvertible", "numberOfItemsInCarousel"]
 - ["Ps23CustomStringConvertible", "numberOfPlaceholdersInCarousel"]
 - !private ["Ps23CustomStringConvertible", "pagingEnabled"]
+- !private ["Ps23CustomStringConvertible", "redColor"]
 - ["Ps23CustomStringConvertible", "refreshLabel"]
 - ["Ps23CustomStringConvertible", "reloaData"]
 - !private ["Ps23CustomStringConvertible", "reloadData"]
 - !private ["Ps23CustomStringConvertible", "reloadItemAtIndex"]
 - ["Ps23CustomStringConvertible", "reloadItemIndex"]
+- !private ["Ps23CustomStringConvertible", "removeFromSuperview"]
 - !private ["Ps23CustomStringConvertible", "scrollOffset"]
 - !private ["Ps23CustomStringConvertible", "setNeedsLayout"]
 - ["Ps23CustomStringConvertible", "setupViews"]
@@ -413,6 +435,7 @@ depends-member:
 - !private ["Ps9Equatable", "Linear"]
 - ["Ps9Equatable", "NSInteger"]
 - !private ["Ps9Equatable", "NSTextAlignment"]
+- ["Ps9Equatable", "RefreshViewDataSource"]
 - !private ["Ps9Equatable", "Right"]
 - !private ["Ps9Equatable", "Stride"]
 - !private ["Ps9Equatable", "UIColor"]
@@ -422,6 +445,7 @@ depends-member:
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "animateWithDuration"]
+- !private ["Ps9Equatable", "backgroundColor"]
 - !private ["Ps9Equatable", "bounceDistance"]
 - !private ["Ps9Equatable", "bounds"]
 - ["Ps9Equatable", "canScrollBack"]
@@ -442,6 +466,7 @@ depends-member:
 - ["Ps9Equatable", "dataSource"]
 - !private ["Ps9Equatable", "decelerationRate"]
 - ["Ps9Equatable", "delegate"]
+- ["Ps9Equatable", "delete"]
 - ["Ps9Equatable", "draggedx"]
 - ["Ps9Equatable", "endRefresh"]
 - !private ["Ps9Equatable", "fabs"]
@@ -464,11 +489,13 @@ depends-member:
 - ["Ps9Equatable", "numberOfPlaceholdersInCarousel"]
 - !private ["Ps9Equatable", "origin"]
 - !private ["Ps9Equatable", "pagingEnabled"]
+- !private ["Ps9Equatable", "redColor"]
 - ["Ps9Equatable", "refreshLabel"]
 - ["Ps9Equatable", "reloaData"]
 - !private ["Ps9Equatable", "reloadData"]
 - !private ["Ps9Equatable", "reloadItemAtIndex"]
 - ["Ps9Equatable", "reloadItemIndex"]
+- !private ["Ps9Equatable", "removeFromSuperview"]
 - !private ["Ps9Equatable", "scrollOffset"]
 - !private ["Ps9Equatable", "setNeedsLayout"]
 - ["Ps9Equatable", "setupViews"]
@@ -503,6 +530,7 @@ depends-member:
 - !private ["Ps8Hashable", "Linear"]
 - ["Ps8Hashable", "NSInteger"]
 - !private ["Ps8Hashable", "NSTextAlignment"]
+- ["Ps8Hashable", "RefreshViewDataSource"]
 - !private ["Ps8Hashable", "Right"]
 - !private ["Ps8Hashable", "Stride"]
 - !private ["Ps8Hashable", "UIColor"]
@@ -512,6 +540,7 @@ depends-member:
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "animateWithDuration"]
+- !private ["Ps8Hashable", "backgroundColor"]
 - !private ["Ps8Hashable", "bounceDistance"]
 - !private ["Ps8Hashable", "bounds"]
 - ["Ps8Hashable", "canScrollBack"]
@@ -532,6 +561,7 @@ depends-member:
 - ["Ps8Hashable", "dataSource"]
 - !private ["Ps8Hashable", "decelerationRate"]
 - ["Ps8Hashable", "delegate"]
+- ["Ps8Hashable", "delete"]
 - ["Ps8Hashable", "draggedx"]
 - ["Ps8Hashable", "endRefresh"]
 - !private ["Ps8Hashable", "fabs"]
@@ -553,11 +583,13 @@ depends-member:
 - ["Ps8Hashable", "numberOfItemsInCarousel"]
 - ["Ps8Hashable", "numberOfPlaceholdersInCarousel"]
 - !private ["Ps8Hashable", "pagingEnabled"]
+- !private ["Ps8Hashable", "redColor"]
 - ["Ps8Hashable", "refreshLabel"]
 - ["Ps8Hashable", "reloaData"]
 - !private ["Ps8Hashable", "reloadData"]
 - !private ["Ps8Hashable", "reloadItemAtIndex"]
 - ["Ps8Hashable", "reloadItemIndex"]
+- !private ["Ps8Hashable", "removeFromSuperview"]
 - !private ["Ps8Hashable", "scrollOffset"]
 - !private ["Ps8Hashable", "setNeedsLayout"]
 - ["Ps8Hashable", "setupViews"]
@@ -590,12 +622,14 @@ depends-member:
 - ["PSo8NSCoding", "Int"]
 - ["PSo8NSCoding", "NSInteger"]
 - !private ["PSo8NSCoding", "NSTextAlignment"]
+- ["PSo8NSCoding", "RefreshViewDataSource"]
 - !private ["PSo8NSCoding", "UIColor"]
 - !private ["PSo8NSCoding", "UIFont"]
 - ["PSo8NSCoding", "UILabel"]
 - !private ["PSo8NSCoding", "UIView"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "animateWithDuration"]
+- !private ["PSo8NSCoding", "backgroundColor"]
 - !private ["PSo8NSCoding", "bounceDistance"]
 - !private ["PSo8NSCoding", "bounds"]
 - ["PSo8NSCoding", "canScrollBack"]
@@ -616,6 +650,7 @@ depends-member:
 - ["PSo8NSCoding", "dataSource"]
 - !private ["PSo8NSCoding", "decelerationRate"]
 - ["PSo8NSCoding", "delegate"]
+- ["PSo8NSCoding", "delete"]
 - ["PSo8NSCoding", "draggedx"]
 - ["PSo8NSCoding", "endRefresh"]
 - !private ["PSo8NSCoding", "fabs"]
@@ -637,11 +672,13 @@ depends-member:
 - ["PSo8NSCoding", "numberOfItemsInCarousel"]
 - ["PSo8NSCoding", "numberOfPlaceholdersInCarousel"]
 - !private ["PSo8NSCoding", "pagingEnabled"]
+- !private ["PSo8NSCoding", "redColor"]
 - ["PSo8NSCoding", "refreshLabel"]
 - ["PSo8NSCoding", "reloaData"]
 - !private ["PSo8NSCoding", "reloadData"]
 - !private ["PSo8NSCoding", "reloadItemAtIndex"]
 - ["PSo8NSCoding", "reloadItemIndex"]
+- !private ["PSo8NSCoding", "removeFromSuperview"]
 - !private ["PSo8NSCoding", "scrollOffset"]
 - !private ["PSo8NSCoding", "setNeedsLayout"]
 - ["PSo8NSCoding", "setupViews"]
@@ -653,7 +690,9 @@ depends-member:
 - !private ["PSo8NSCoding", "vertical"]
 - ["PSo8NSCoding", ""]
 - !private ["PSo9NSCopying", "init"]
+- !private ["PSo9NSCopying", "redColor"]
 - !private ["PSo9NSCopying", "systemFontOfSize"]
+- ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - ["CSo8NSObject", "CGFloat"]
 - ["CSo8NSObject", "CGRect"]
@@ -669,6 +708,7 @@ depends-member:
 - ["CSo8NSObject", "NSCoder"]
 - ["CSo8NSObject", "NSInteger"]
 - !private ["CSo8NSObject", "NSTextAlignment"]
+- ["CSo8NSObject", "RefreshViewDataSource"]
 - ["CSo8NSObject", "RightPullToRefreshViewDataSource"]
 - ["CSo8NSObject", "RightPullToRefreshViewDelegate"]
 - !private ["CSo8NSObject", "UIColor"]
@@ -678,6 +718,7 @@ depends-member:
 - ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "addSubview"]
 - !private ["CSo8NSObject", "animateWithDuration"]
+- !private ["CSo8NSObject", "backgroundColor"]
 - !private ["CSo8NSObject", "bounceDistance"]
 - !private ["CSo8NSObject", "bounds"]
 - ["CSo8NSObject", "canScrollBack"]
@@ -698,6 +739,7 @@ depends-member:
 - ["CSo8NSObject", "dataSource"]
 - !private ["CSo8NSObject", "decelerationRate"]
 - ["CSo8NSObject", "delegate"]
+- ["CSo8NSObject", "delete"]
 - ["CSo8NSObject", "draggedx"]
 - ["CSo8NSObject", "endRefresh"]
 - !private ["CSo8NSObject", "fabs"]
@@ -719,11 +761,13 @@ depends-member:
 - ["CSo8NSObject", "numberOfItemsInCarousel"]
 - ["CSo8NSObject", "numberOfPlaceholdersInCarousel"]
 - !private ["CSo8NSObject", "pagingEnabled"]
+- !private ["CSo8NSObject", "redColor"]
 - ["CSo8NSObject", "refreshLabel"]
 - ["CSo8NSObject", "reloaData"]
 - !private ["CSo8NSObject", "reloadData"]
 - !private ["CSo8NSObject", "reloadItemAtIndex"]
 - ["CSo8NSObject", "reloadItemIndex"]
+- !private ["CSo8NSObject", "removeFromSuperview"]
 - !private ["CSo8NSObject", "scrollOffset"]
 - !private ["CSo8NSObject", "setNeedsLayout"]
 - ["CSo8NSObject", "setupViews"]
@@ -747,12 +791,14 @@ depends-member:
 - ["PSo16NSObjectProtocol", "Int"]
 - ["PSo16NSObjectProtocol", "NSInteger"]
 - !private ["PSo16NSObjectProtocol", "NSTextAlignment"]
+- ["PSo16NSObjectProtocol", "RefreshViewDataSource"]
 - !private ["PSo16NSObjectProtocol", "UIColor"]
 - !private ["PSo16NSObjectProtocol", "UIFont"]
 - ["PSo16NSObjectProtocol", "UILabel"]
 - !private ["PSo16NSObjectProtocol", "UIView"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "animateWithDuration"]
+- !private ["PSo16NSObjectProtocol", "backgroundColor"]
 - !private ["PSo16NSObjectProtocol", "bounceDistance"]
 - !private ["PSo16NSObjectProtocol", "bounds"]
 - ["PSo16NSObjectProtocol", "canScrollBack"]
@@ -773,6 +819,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "dataSource"]
 - !private ["PSo16NSObjectProtocol", "decelerationRate"]
 - ["PSo16NSObjectProtocol", "delegate"]
+- ["PSo16NSObjectProtocol", "delete"]
 - ["PSo16NSObjectProtocol", "draggedx"]
 - ["PSo16NSObjectProtocol", "endRefresh"]
 - !private ["PSo16NSObjectProtocol", "fabs"]
@@ -794,11 +841,13 @@ depends-member:
 - ["PSo16NSObjectProtocol", "numberOfItemsInCarousel"]
 - ["PSo16NSObjectProtocol", "numberOfPlaceholdersInCarousel"]
 - !private ["PSo16NSObjectProtocol", "pagingEnabled"]
+- !private ["PSo16NSObjectProtocol", "redColor"]
 - ["PSo16NSObjectProtocol", "refreshLabel"]
 - ["PSo16NSObjectProtocol", "reloaData"]
 - !private ["PSo16NSObjectProtocol", "reloadData"]
 - !private ["PSo16NSObjectProtocol", "reloadItemAtIndex"]
 - ["PSo16NSObjectProtocol", "reloadItemIndex"]
+- !private ["PSo16NSObjectProtocol", "removeFromSuperview"]
 - !private ["PSo16NSObjectProtocol", "scrollOffset"]
 - !private ["PSo16NSObjectProtocol", "setNeedsLayout"]
 - ["PSo16NSObjectProtocol", "setupViews"]
@@ -811,6 +860,7 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "vertical"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "init"]
+- !private ["PSo14NSSecureCoding", "redColor"]
 - !private ["OSC15NSTextAlignment", "Right"]
 - !private ["Sq", "deinit"]
 - ["Ps21RandomAccessIndexType", "init"]
@@ -829,6 +879,7 @@ depends-member:
 - ["P8SwiftOne30RightPullToRefreshViewDelegate", "rightPullRefreshViewCurrentItemAtIndexDidChange"]
 - ["P8SwiftOne30RightPullToRefreshViewDelegate", "rightPullRefreshViewDidScrollToLastItem"]
 - ["P8SwiftOne30RightPullToRefreshViewDelegate", "rightPullRefreshViewRefrshing"]
+- ["C8SwiftOne16RightRefreshView", "AnyObject"]
 - ["C8SwiftOne16RightRefreshView", "Bool"]
 - ["C8SwiftOne16RightRefreshView", "CGFloat"]
 - ["C8SwiftOne16RightRefreshView", "CGRect"]
@@ -844,6 +895,7 @@ depends-member:
 - ["C8SwiftOne16RightRefreshView", "NSCoder"]
 - ["C8SwiftOne16RightRefreshView", "NSInteger"]
 - !private ["C8SwiftOne16RightRefreshView", "NSTextAlignment"]
+- ["C8SwiftOne16RightRefreshView", "RefreshViewDataSource"]
 - ["C8SwiftOne16RightRefreshView", "RightPullToRefreshViewDataSource"]
 - ["C8SwiftOne16RightRefreshView", "RightPullToRefreshViewDelegate"]
 - !private ["C8SwiftOne16RightRefreshView", "UIColor"]
@@ -870,6 +922,7 @@ depends-member:
 - ["C8SwiftOne16RightRefreshView", "dataSource"]
 - ["C8SwiftOne16RightRefreshView", "deinit"]
 - ["C8SwiftOne16RightRefreshView", "delegate"]
+- ["C8SwiftOne16RightRefreshView", "delete"]
 - !private ["C8SwiftOne16RightRefreshView", "draggedx"]
 - ["C8SwiftOne16RightRefreshView", "endRefresh"]
 - !private ["C8SwiftOne16RightRefreshView", "fabs"]
@@ -911,12 +964,14 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "Int"]
 - ["PSo29UIAccessibilityIdentification", "NSInteger"]
 - !private ["PSo29UIAccessibilityIdentification", "NSTextAlignment"]
+- ["PSo29UIAccessibilityIdentification", "RefreshViewDataSource"]
 - !private ["PSo29UIAccessibilityIdentification", "UIColor"]
 - !private ["PSo29UIAccessibilityIdentification", "UIFont"]
 - ["PSo29UIAccessibilityIdentification", "UILabel"]
 - !private ["PSo29UIAccessibilityIdentification", "UIView"]
 - !private ["PSo29UIAccessibilityIdentification", "addSubview"]
 - !private ["PSo29UIAccessibilityIdentification", "animateWithDuration"]
+- !private ["PSo29UIAccessibilityIdentification", "backgroundColor"]
 - !private ["PSo29UIAccessibilityIdentification", "bounceDistance"]
 - !private ["PSo29UIAccessibilityIdentification", "bounds"]
 - ["PSo29UIAccessibilityIdentification", "canScrollBack"]
@@ -937,6 +992,7 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "dataSource"]
 - !private ["PSo29UIAccessibilityIdentification", "decelerationRate"]
 - ["PSo29UIAccessibilityIdentification", "delegate"]
+- ["PSo29UIAccessibilityIdentification", "delete"]
 - ["PSo29UIAccessibilityIdentification", "draggedx"]
 - ["PSo29UIAccessibilityIdentification", "endRefresh"]
 - !private ["PSo29UIAccessibilityIdentification", "fabs"]
@@ -963,6 +1019,7 @@ depends-member:
 - !private ["PSo29UIAccessibilityIdentification", "reloadData"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadItemAtIndex"]
 - ["PSo29UIAccessibilityIdentification", "reloadItemIndex"]
+- !private ["PSo29UIAccessibilityIdentification", "removeFromSuperview"]
 - !private ["PSo29UIAccessibilityIdentification", "scrollOffset"]
 - !private ["PSo29UIAccessibilityIdentification", "setNeedsLayout"]
 - ["PSo29UIAccessibilityIdentification", "setupViews"]
@@ -986,12 +1043,14 @@ depends-member:
 - ["PSo12UIAppearance", "Int"]
 - ["PSo12UIAppearance", "NSInteger"]
 - !private ["PSo12UIAppearance", "NSTextAlignment"]
+- ["PSo12UIAppearance", "RefreshViewDataSource"]
 - !private ["PSo12UIAppearance", "UIColor"]
 - !private ["PSo12UIAppearance", "UIFont"]
 - ["PSo12UIAppearance", "UILabel"]
 - !private ["PSo12UIAppearance", "UIView"]
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "animateWithDuration"]
+- !private ["PSo12UIAppearance", "backgroundColor"]
 - !private ["PSo12UIAppearance", "bounceDistance"]
 - !private ["PSo12UIAppearance", "bounds"]
 - ["PSo12UIAppearance", "canScrollBack"]
@@ -1012,6 +1071,7 @@ depends-member:
 - ["PSo12UIAppearance", "dataSource"]
 - !private ["PSo12UIAppearance", "decelerationRate"]
 - ["PSo12UIAppearance", "delegate"]
+- ["PSo12UIAppearance", "delete"]
 - ["PSo12UIAppearance", "draggedx"]
 - ["PSo12UIAppearance", "endRefresh"]
 - !private ["PSo12UIAppearance", "fabs"]
@@ -1038,6 +1098,7 @@ depends-member:
 - !private ["PSo12UIAppearance", "reloadData"]
 - !private ["PSo12UIAppearance", "reloadItemAtIndex"]
 - ["PSo12UIAppearance", "reloadItemIndex"]
+- !private ["PSo12UIAppearance", "removeFromSuperview"]
 - !private ["PSo12UIAppearance", "scrollOffset"]
 - !private ["PSo12UIAppearance", "setNeedsLayout"]
 - ["PSo12UIAppearance", "setupViews"]
@@ -1061,12 +1122,14 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "Int"]
 - ["PSo21UIAppearanceContainer", "NSInteger"]
 - !private ["PSo21UIAppearanceContainer", "NSTextAlignment"]
+- ["PSo21UIAppearanceContainer", "RefreshViewDataSource"]
 - !private ["PSo21UIAppearanceContainer", "UIColor"]
 - !private ["PSo21UIAppearanceContainer", "UIFont"]
 - ["PSo21UIAppearanceContainer", "UILabel"]
 - !private ["PSo21UIAppearanceContainer", "UIView"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "animateWithDuration"]
+- !private ["PSo21UIAppearanceContainer", "backgroundColor"]
 - !private ["PSo21UIAppearanceContainer", "bounceDistance"]
 - !private ["PSo21UIAppearanceContainer", "bounds"]
 - ["PSo21UIAppearanceContainer", "canScrollBack"]
@@ -1087,6 +1150,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "dataSource"]
 - !private ["PSo21UIAppearanceContainer", "decelerationRate"]
 - ["PSo21UIAppearanceContainer", "delegate"]
+- ["PSo21UIAppearanceContainer", "delete"]
 - ["PSo21UIAppearanceContainer", "draggedx"]
 - ["PSo21UIAppearanceContainer", "endRefresh"]
 - !private ["PSo21UIAppearanceContainer", "fabs"]
@@ -1113,6 +1177,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "reloadData"]
 - !private ["PSo21UIAppearanceContainer", "reloadItemAtIndex"]
 - ["PSo21UIAppearanceContainer", "reloadItemIndex"]
+- !private ["PSo21UIAppearanceContainer", "removeFromSuperview"]
 - !private ["PSo21UIAppearanceContainer", "scrollOffset"]
 - !private ["PSo21UIAppearanceContainer", "setNeedsLayout"]
 - ["PSo21UIAppearanceContainer", "setupViews"]
@@ -1124,6 +1189,7 @@ depends-member:
 - !private ["PSo21UIAppearanceContainer", "vertical"]
 - ["PSo21UIAppearanceContainer", ""]
 - !private ["CSo7UIColor", "init"]
+- !private ["CSo7UIColor", "redColor"]
 - ["PSo17UICoordinateSpace", "Bool"]
 - ["PSo17UICoordinateSpace", "CGFloat"]
 - !private ["PSo17UICoordinateSpace", "CGRectGetHeight"]
@@ -1137,12 +1203,14 @@ depends-member:
 - ["PSo17UICoordinateSpace", "Int"]
 - ["PSo17UICoordinateSpace", "NSInteger"]
 - !private ["PSo17UICoordinateSpace", "NSTextAlignment"]
+- ["PSo17UICoordinateSpace", "RefreshViewDataSource"]
 - !private ["PSo17UICoordinateSpace", "UIColor"]
 - !private ["PSo17UICoordinateSpace", "UIFont"]
 - ["PSo17UICoordinateSpace", "UILabel"]
 - !private ["PSo17UICoordinateSpace", "UIView"]
 - !private ["PSo17UICoordinateSpace", "addSubview"]
 - !private ["PSo17UICoordinateSpace", "animateWithDuration"]
+- !private ["PSo17UICoordinateSpace", "backgroundColor"]
 - !private ["PSo17UICoordinateSpace", "bounceDistance"]
 - !private ["PSo17UICoordinateSpace", "bounds"]
 - ["PSo17UICoordinateSpace", "canScrollBack"]
@@ -1163,6 +1231,7 @@ depends-member:
 - ["PSo17UICoordinateSpace", "dataSource"]
 - !private ["PSo17UICoordinateSpace", "decelerationRate"]
 - ["PSo17UICoordinateSpace", "delegate"]
+- ["PSo17UICoordinateSpace", "delete"]
 - ["PSo17UICoordinateSpace", "draggedx"]
 - ["PSo17UICoordinateSpace", "endRefresh"]
 - !private ["PSo17UICoordinateSpace", "fabs"]
@@ -1189,6 +1258,7 @@ depends-member:
 - !private ["PSo17UICoordinateSpace", "reloadData"]
 - !private ["PSo17UICoordinateSpace", "reloadItemAtIndex"]
 - ["PSo17UICoordinateSpace", "reloadItemIndex"]
+- !private ["PSo17UICoordinateSpace", "removeFromSuperview"]
 - !private ["PSo17UICoordinateSpace", "scrollOffset"]
 - !private ["PSo17UICoordinateSpace", "setNeedsLayout"]
 - ["PSo17UICoordinateSpace", "setupViews"]
@@ -1212,12 +1282,14 @@ depends-member:
 - ["PSo13UIDynamicItem", "Int"]
 - ["PSo13UIDynamicItem", "NSInteger"]
 - !private ["PSo13UIDynamicItem", "NSTextAlignment"]
+- ["PSo13UIDynamicItem", "RefreshViewDataSource"]
 - !private ["PSo13UIDynamicItem", "UIColor"]
 - !private ["PSo13UIDynamicItem", "UIFont"]
 - ["PSo13UIDynamicItem", "UILabel"]
 - !private ["PSo13UIDynamicItem", "UIView"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "animateWithDuration"]
+- !private ["PSo13UIDynamicItem", "backgroundColor"]
 - !private ["PSo13UIDynamicItem", "bounceDistance"]
 - !private ["PSo13UIDynamicItem", "bounds"]
 - ["PSo13UIDynamicItem", "canScrollBack"]
@@ -1238,6 +1310,7 @@ depends-member:
 - ["PSo13UIDynamicItem", "dataSource"]
 - !private ["PSo13UIDynamicItem", "decelerationRate"]
 - ["PSo13UIDynamicItem", "delegate"]
+- ["PSo13UIDynamicItem", "delete"]
 - ["PSo13UIDynamicItem", "draggedx"]
 - ["PSo13UIDynamicItem", "endRefresh"]
 - !private ["PSo13UIDynamicItem", "fabs"]
@@ -1264,6 +1337,7 @@ depends-member:
 - !private ["PSo13UIDynamicItem", "reloadData"]
 - !private ["PSo13UIDynamicItem", "reloadItemAtIndex"]
 - ["PSo13UIDynamicItem", "reloadItemIndex"]
+- !private ["PSo13UIDynamicItem", "removeFromSuperview"]
 - !private ["PSo13UIDynamicItem", "scrollOffset"]
 - !private ["PSo13UIDynamicItem", "setNeedsLayout"]
 - ["PSo13UIDynamicItem", "setupViews"]
@@ -1287,12 +1361,14 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "Int"]
 - ["PSo18UIFocusEnvironment", "NSInteger"]
 - !private ["PSo18UIFocusEnvironment", "NSTextAlignment"]
+- ["PSo18UIFocusEnvironment", "RefreshViewDataSource"]
 - !private ["PSo18UIFocusEnvironment", "UIColor"]
 - !private ["PSo18UIFocusEnvironment", "UIFont"]
 - ["PSo18UIFocusEnvironment", "UILabel"]
 - !private ["PSo18UIFocusEnvironment", "UIView"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "animateWithDuration"]
+- !private ["PSo18UIFocusEnvironment", "backgroundColor"]
 - !private ["PSo18UIFocusEnvironment", "bounceDistance"]
 - !private ["PSo18UIFocusEnvironment", "bounds"]
 - ["PSo18UIFocusEnvironment", "canScrollBack"]
@@ -1313,6 +1389,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "dataSource"]
 - !private ["PSo18UIFocusEnvironment", "decelerationRate"]
 - ["PSo18UIFocusEnvironment", "delegate"]
+- ["PSo18UIFocusEnvironment", "delete"]
 - ["PSo18UIFocusEnvironment", "draggedx"]
 - ["PSo18UIFocusEnvironment", "endRefresh"]
 - !private ["PSo18UIFocusEnvironment", "fabs"]
@@ -1339,6 +1416,7 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "reloadData"]
 - !private ["PSo18UIFocusEnvironment", "reloadItemAtIndex"]
 - ["PSo18UIFocusEnvironment", "reloadItemIndex"]
+- !private ["PSo18UIFocusEnvironment", "removeFromSuperview"]
 - !private ["PSo18UIFocusEnvironment", "scrollOffset"]
 - !private ["PSo18UIFocusEnvironment", "setNeedsLayout"]
 - ["PSo18UIFocusEnvironment", "setupViews"]
@@ -1353,11 +1431,13 @@ depends-member:
 - !private ["CSo7UILabel", "font"]
 - !private ["CSo7UILabel", "frame"]
 - ["CSo7UILabel", "init"]
+- !private ["CSo7UILabel", "removeFromSuperview"]
 - !private ["CSo7UILabel", "setNeedsLayout"]
 - !private ["CSo7UILabel", "sizeToFit"]
 - !private ["CSo7UILabel", "text"]
 - !private ["CSo7UILabel", "textAlignment"]
 - !private ["CSo7UILabel", "textColor"]
+- ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CGFloat"]
 - ["CSo11UIResponder", "CGRect"]
@@ -1373,6 +1453,7 @@ depends-member:
 - ["CSo11UIResponder", "NSCoder"]
 - ["CSo11UIResponder", "NSInteger"]
 - !private ["CSo11UIResponder", "NSTextAlignment"]
+- ["CSo11UIResponder", "RefreshViewDataSource"]
 - ["CSo11UIResponder", "RightPullToRefreshViewDataSource"]
 - ["CSo11UIResponder", "RightPullToRefreshViewDelegate"]
 - !private ["CSo11UIResponder", "UIColor"]
@@ -1382,6 +1463,7 @@ depends-member:
 - ["CSo11UIResponder", "Void"]
 - !private ["CSo11UIResponder", "addSubview"]
 - !private ["CSo11UIResponder", "animateWithDuration"]
+- !private ["CSo11UIResponder", "backgroundColor"]
 - !private ["CSo11UIResponder", "bounceDistance"]
 - !private ["CSo11UIResponder", "bounds"]
 - ["CSo11UIResponder", "canScrollBack"]
@@ -1402,6 +1484,7 @@ depends-member:
 - ["CSo11UIResponder", "dataSource"]
 - !private ["CSo11UIResponder", "decelerationRate"]
 - ["CSo11UIResponder", "delegate"]
+- ["CSo11UIResponder", "delete"]
 - ["CSo11UIResponder", "draggedx"]
 - ["CSo11UIResponder", "endRefresh"]
 - !private ["CSo11UIResponder", "fabs"]
@@ -1428,6 +1511,7 @@ depends-member:
 - !private ["CSo11UIResponder", "reloadData"]
 - !private ["CSo11UIResponder", "reloadItemAtIndex"]
 - ["CSo11UIResponder", "reloadItemIndex"]
+- !private ["CSo11UIResponder", "removeFromSuperview"]
 - !private ["CSo11UIResponder", "scrollOffset"]
 - !private ["CSo11UIResponder", "setNeedsLayout"]
 - ["CSo11UIResponder", "setupViews"]
@@ -1450,12 +1534,14 @@ depends-member:
 - ["PSo18UITraitEnvironment", "Int"]
 - ["PSo18UITraitEnvironment", "NSInteger"]
 - !private ["PSo18UITraitEnvironment", "NSTextAlignment"]
+- ["PSo18UITraitEnvironment", "RefreshViewDataSource"]
 - !private ["PSo18UITraitEnvironment", "UIColor"]
 - !private ["PSo18UITraitEnvironment", "UIFont"]
 - ["PSo18UITraitEnvironment", "UILabel"]
 - !private ["PSo18UITraitEnvironment", "UIView"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "animateWithDuration"]
+- !private ["PSo18UITraitEnvironment", "backgroundColor"]
 - !private ["PSo18UITraitEnvironment", "bounceDistance"]
 - !private ["PSo18UITraitEnvironment", "bounds"]
 - ["PSo18UITraitEnvironment", "canScrollBack"]
@@ -1476,6 +1562,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "dataSource"]
 - !private ["PSo18UITraitEnvironment", "decelerationRate"]
 - ["PSo18UITraitEnvironment", "delegate"]
+- ["PSo18UITraitEnvironment", "delete"]
 - ["PSo18UITraitEnvironment", "draggedx"]
 - ["PSo18UITraitEnvironment", "endRefresh"]
 - !private ["PSo18UITraitEnvironment", "fabs"]
@@ -1502,6 +1589,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "reloadData"]
 - !private ["PSo18UITraitEnvironment", "reloadItemAtIndex"]
 - ["PSo18UITraitEnvironment", "reloadItemIndex"]
+- !private ["PSo18UITraitEnvironment", "removeFromSuperview"]
 - !private ["PSo18UITraitEnvironment", "scrollOffset"]
 - !private ["PSo18UITraitEnvironment", "setNeedsLayout"]
 - ["PSo18UITraitEnvironment", "setupViews"]
@@ -1512,6 +1600,7 @@ depends-member:
 - !private ["PSo18UITraitEnvironment", "type"]
 - !private ["PSo18UITraitEnvironment", "vertical"]
 - ["PSo18UITraitEnvironment", ""]
+- ["CSo6UIView", "AnyObject"]
 - ["CSo6UIView", "Bool"]
 - ["CSo6UIView", "CGFloat"]
 - ["CSo6UIView", "CGRect"]
@@ -1527,6 +1616,7 @@ depends-member:
 - ["CSo6UIView", "NSCoder"]
 - ["CSo6UIView", "NSInteger"]
 - !private ["CSo6UIView", "NSTextAlignment"]
+- ["CSo6UIView", "RefreshViewDataSource"]
 - ["CSo6UIView", "RightPullToRefreshViewDataSource"]
 - ["CSo6UIView", "RightPullToRefreshViewDelegate"]
 - !private ["CSo6UIView", "UIColor"]
@@ -1536,6 +1626,7 @@ depends-member:
 - ["CSo6UIView", "Void"]
 - !private ["CSo6UIView", "addSubview"]
 - !private ["CSo6UIView", "animateWithDuration"]
+- !private ["CSo6UIView", "backgroundColor"]
 - !private ["CSo6UIView", "bounceDistance"]
 - !private ["CSo6UIView", "bounds"]
 - ["CSo6UIView", "canScrollBack"]
@@ -1556,6 +1647,7 @@ depends-member:
 - ["CSo6UIView", "dataSource"]
 - !private ["CSo6UIView", "decelerationRate"]
 - ["CSo6UIView", "delegate"]
+- ["CSo6UIView", "delete"]
 - ["CSo6UIView", "draggedx"]
 - ["CSo6UIView", "endRefresh"]
 - !private ["CSo6UIView", "fabs"]
@@ -1582,6 +1674,7 @@ depends-member:
 - !private ["CSo6UIView", "reloadData"]
 - !private ["CSo6UIView", "reloadItemAtIndex"]
 - ["CSo6UIView", "reloadItemIndex"]
+- !private ["CSo6UIView", "removeFromSuperview"]
 - !private ["CSo6UIView", "scrollOffset"]
 - !private ["CSo6UIView", "setNeedsLayout"]
 - ["CSo6UIView", "setupViews"]
@@ -1602,6 +1695,7 @@ depends-member:
 - !private ["Ps22_CVarArgPassedAsDouble", "Stride"]
 - ["Ps22_CVarArgPassedAsDouble", "init"]
 - !private ["Ps24_ColorLiteralConvertible", "init"]
+- !private ["Ps24_ColorLiteralConvertible", "redColor"]
 - ["Ps14_Incrementable", "init"]
 - ["Ps22_IntegerArithmeticType", "init"]
 - ["Ps12_IntegerType", "init"]
@@ -1625,6 +1719,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "IntegerLiteralType"]
 - ["Ps12_Reflectable", "NSInteger"]
 - !private ["Ps12_Reflectable", "NSTextAlignment"]
+- ["Ps12_Reflectable", "RefreshViewDataSource"]
 - !private ["Ps12_Reflectable", "Stride"]
 - !private ["Ps12_Reflectable", "UIColor"]
 - !private ["Ps12_Reflectable", "UIFont"]
@@ -1633,6 +1728,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "_getBuiltinLogicValue"]
 - !private ["Ps12_Reflectable", "addSubview"]
 - !private ["Ps12_Reflectable", "animateWithDuration"]
+- !private ["Ps12_Reflectable", "backgroundColor"]
 - !private ["Ps12_Reflectable", "bounceDistance"]
 - !private ["Ps12_Reflectable", "bounds"]
 - ["Ps12_Reflectable", "canScrollBack"]
@@ -1653,6 +1749,7 @@ depends-member:
 - ["Ps12_Reflectable", "dataSource"]
 - !private ["Ps12_Reflectable", "decelerationRate"]
 - ["Ps12_Reflectable", "delegate"]
+- ["Ps12_Reflectable", "delete"]
 - ["Ps12_Reflectable", "draggedx"]
 - ["Ps12_Reflectable", "endRefresh"]
 - !private ["Ps12_Reflectable", "fabs"]
@@ -1680,6 +1777,7 @@ depends-member:
 - !private ["Ps12_Reflectable", "reloadData"]
 - !private ["Ps12_Reflectable", "reloadItemAtIndex"]
 - ["Ps12_Reflectable", "reloadItemIndex"]
+- !private ["Ps12_Reflectable", "removeFromSuperview"]
 - !private ["Ps12_Reflectable", "scrollOffset"]
 - !private ["Ps12_Reflectable", "setNeedsLayout"]
 - ["Ps12_Reflectable", "setupViews"]
@@ -1692,12 +1790,15 @@ depends-member:
 - !private ["Ps12_Reflectable", "x"]
 - ["Ps12_Reflectable", ""]
 - ["Ps18_SignedIntegerType", "init"]
+- !private ["CSo9iCarousel", "backgroundColor"]
 - !private ["CSo9iCarousel", "bounceDistance"]
 - !private ["CSo9iCarousel", "contentOffset"]
 - !private ["CSo9iCarousel", "contentView"]
 - !private ["CSo9iCarousel", "currentItemIndex"]
 - !private ["CSo9iCarousel", "currentItemView"]
+- !private ["CSo9iCarousel", "dataSource"]
 - !private ["CSo9iCarousel", "decelerationRate"]
+- !private ["CSo9iCarousel", "delegate"]
 - !private ["CSo9iCarousel", "frame"]
 - ["CSo9iCarousel", "init"]
 - !private ["CSo9iCarousel", "insertItemAtIndex"]
@@ -1706,6 +1807,7 @@ depends-member:
 - !private ["CSo9iCarousel", "pagingEnabled"]
 - !private ["CSo9iCarousel", "reloadData"]
 - !private ["CSo9iCarousel", "reloadItemAtIndex"]
+- !private ["CSo9iCarousel", "removeFromSuperview"]
 - !private ["CSo9iCarousel", "scrollOffset"]
 - !private ["CSo9iCarousel", "type"]
 - !private ["CSo9iCarousel", "vertical"]
@@ -1722,6 +1824,7 @@ depends-member:
 - ["PSo19iCarouselDataSource", "Int"]
 - ["PSo19iCarouselDataSource", "NSInteger"]
 - !private ["PSo19iCarouselDataSource", "NSTextAlignment"]
+- !private ["PSo19iCarouselDataSource", "RefreshViewDataSource"]
 - !private ["PSo19iCarouselDataSource", "UIColor"]
 - !private ["PSo19iCarouselDataSource", "UIFont"]
 - ["PSo19iCarouselDataSource", "UILabel"]
@@ -1770,6 +1873,7 @@ depends-member:
 - ["PSo17iCarouselDelegate", "Int"]
 - ["PSo17iCarouselDelegate", "NSInteger"]
 - !private ["PSo17iCarouselDelegate", "NSTextAlignment"]
+- !private ["PSo17iCarouselDelegate", "RefreshViewDataSource"]
 - !private ["PSo17iCarouselDelegate", "UIColor"]
 - !private ["PSo17iCarouselDelegate", "UIFont"]
 - ["PSo17iCarouselDelegate", "UILabel"]
@@ -1907,4 +2011,4 @@ depends-external:
 - "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
 - "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-umbrella.h"
 - "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules/module.modulemap"
-interface-hash: "6bf36331d39baba8082478f8decb4882"
+interface-hash: "ccdbabc1a51feebd00f933bb1a18a064"

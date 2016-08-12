@@ -273,6 +273,11 @@ SWIFT_CLASS("_TtC8SwiftOne18ReadViewController")
 SWIFT_CLASS("_TtC8SwiftOne16RightRefreshView")
 @interface RightRefreshView : UIView <iCarouselDataSource, iCarouselDelegate>
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (void)delete:(id _Nullable)sender;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@property (nonatomic, readonly) NSInteger currentItemIndex;
+@property (nonatomic, readonly, strong) UIView * _Nonnull currentItemView;
+@property (nonatomic, readonly, strong) UIView * _Nonnull contentView;
 
 /// 插入一个新的Item
 ///
@@ -294,10 +299,6 @@ SWIFT_CLASS("_TtC8SwiftOne16RightRefreshView")
 
 /// 结束刷新
 - (void)endRefresh;
-@property (nonatomic, readonly) NSInteger currentItemIndex;
-@property (nonatomic, readonly, strong) UIView * _Nonnull currentItemView;
-@property (nonatomic, readonly, strong) UIView * _Nonnull contentView;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (NSInteger)numberOfItemsInCarousel:(iCarousel * _Nonnull)carousel;
 - (UIView * _Nonnull)carousel:(iCarousel * _Nonnull)carousel viewForItemAtIndex:(NSInteger)index reusingView:(UIView * _Nullable)view;
 - (CGFloat)carouselItemWidth:(iCarousel * _Nonnull)carousel;

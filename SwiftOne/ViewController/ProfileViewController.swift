@@ -10,6 +10,6 @@ import UIKit
 class ProfileViewController: ViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.SetNavigationBarShowRightBarButtonItem(false)
+        SetNavigationBarShowRightBarButtonItem(false)
     }
 }
