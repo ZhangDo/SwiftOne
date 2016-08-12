@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (3.4.0)
+  - iCarousel (1.8.2)
+  - Kingfisher (2.4.1)
+  - SnapKit (0.15.0)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.0)
+  - iCarousel (~> 1.8.1)
+  - Kingfisher (~> 2.4)
+  - SnapKit (~> 0.15.0)
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
+  iCarousel: 67c8a43da5a46795b56aadfc96cd36a16f6149b2
+  Kingfisher: 41aed5b6c1ed8fa98cf6d75283ce89cf7890f517
+  SnapKit: 4962eed2ee18e48cbd2b2292fffc57efe7235f87
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+PODFILE CHECKSUM: b89bde55d71cf7df26519d5cf9932d97a662e1b5
+
+COCOAPODS: 1.0.0

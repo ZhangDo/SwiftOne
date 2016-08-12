@@ -1,0 +1,1 @@
+ const unsigned char Pods_SwiftOneVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:Pods_SwiftOne  PROJECT:Pods-1" "\n"; const double Pods_SwiftOneVersionNumber __attribute__ ((used)) = (double)1.;

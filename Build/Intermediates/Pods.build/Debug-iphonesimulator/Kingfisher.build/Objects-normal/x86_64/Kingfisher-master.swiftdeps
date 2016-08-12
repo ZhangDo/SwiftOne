@@ -1,0 +1,17 @@
+version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
+options: "fd0adfb15ec031e5d611dce8b108675b"
+build_time: [524289227, 813337000]
+inputs:
+  "/Users/chenmengjia/Documents/SwiftOne/Pods/Kingfisher/Sources/AnimatedImageView.swift": [524210927, 0]
+  "/Users/chenmengjia/Documents/SwiftOne/Pods/Kingfisher/Sources/Image.swift": [524210927, 0]
+  "/Users/chenmengjia/Documents/SwiftOne/Pods/Kingfisher/Sources/ImageCache.swift": [524210927, 0]
+  "/Users/chenmengjia/Documents/SwiftOne/Pods/Kingfisher/Sources/ImageDownloader.swift": [524210927, 0]
+  "/Users/chenmengjia/Documents/SwiftOne/Pods/Kingfisher/Sources/ImagePrefetcher.swift": [524210927, 0]
+  "/Users/chenmengjia/Documents/SwiftOne/Pods/Kingfisher/Sources/ImageTransition.swift": [524210927, 0]
+  "/Users/chenmengjia/Documents/SwiftOne/Pods/Kingfisher/Sources/ImageView+Kingfisher.swift": [524210927, 0]
+  "/Users/chenmengjia/Documents/SwiftOne/Pods/Kingfisher/Sources/KingfisherManager.swift": [524210927, 0]
+  "/Users/chenmengjia/Documents/SwiftOne/Pods/Kingfisher/Sources/KingfisherOptionsInfo.swift": [524210927, 0]
+  "/Users/chenmengjia/Documents/SwiftOne/Pods/Kingfisher/Sources/Resource.swift": [524210927, 0]
+  "/Users/chenmengjia/Documents/SwiftOne/Pods/Kingfisher/Sources/String+MD5.swift": [524210927, 0]
+  "/Users/chenmengjia/Documents/SwiftOne/Pods/Kingfisher/Sources/ThreadHelper.swift": [524210927, 0]
+  "/Users/chenmengjia/Documents/SwiftOne/Pods/Kingfisher/Sources/UIButton+Kingfisher.swift": [524210927, 0]

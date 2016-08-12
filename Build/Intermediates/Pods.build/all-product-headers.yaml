@@ -1,0 +1,178 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Alamofire-Swift.h",
+          'external-contents': "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Alamofire-umbrella.h",
+          'external-contents': "/Users/chenmengjia/Documents/SwiftOne/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/chenmengjia/Documents/SwiftOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/Alamofire.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Kingfisher-Swift.h",
+          'external-contents': "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Headers/Kingfisher-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "Kingfisher-umbrella.h",
+          'external-contents': "/Users/chenmengjia/Documents/SwiftOne/Pods/Target Support Files/Kingfisher/Kingfisher-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Kingfisher.h",
+          'external-contents': "/Users/chenmengjia/Documents/SwiftOne/Pods/Kingfisher/Sources/Kingfisher.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/chenmengjia/Documents/SwiftOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/Kingfisher.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/Pods_SwiftOne.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-SwiftOne-umbrella.h",
+          'external-contents': "/Users/chenmengjia/Documents/SwiftOne/Pods/Target Support Files/Pods-SwiftOne/Pods-SwiftOne-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_SwiftOne-Swift.h",
+          'external-contents': "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/Pods_SwiftOne.framework/Headers/Pods_SwiftOne-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/Pods_SwiftOne.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/chenmengjia/Documents/SwiftOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-SwiftOne.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SnapKit-Swift.h",
+          'external-contents': "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework/Headers/SnapKit-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SnapKit-umbrella.h",
+          'external-contents': "/Users/chenmengjia/Documents/SwiftOne/Pods/Target Support Files/SnapKit/SnapKit-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/SnapKit/SnapKit.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/chenmengjia/Documents/SwiftOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/SnapKit.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "SwiftyJSON-Swift.h",
+          'external-contents': "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SwiftyJSON-umbrella.h",
+          'external-contents': "/Users/chenmengjia/Documents/SwiftOne/Pods/Target Support Files/SwiftyJSON/SwiftyJSON-umbrella.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/chenmengjia/Documents/SwiftOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/SwiftyJSON.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/iCarousel/iCarousel.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "iCarousel-Swift.h",
+          'external-contents': "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/iCarousel/iCarousel.framework/Headers/iCarousel-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "iCarousel-umbrella.h",
+          'external-contents': "/Users/chenmengjia/Documents/SwiftOne/Pods/Target Support Files/iCarousel/iCarousel-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "iCarousel.h",
+          'external-contents': "/Users/chenmengjia/Documents/SwiftOne/Pods/iCarousel/iCarousel/iCarousel.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/iCarousel/iCarousel.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/chenmengjia/Documents/SwiftOne/Build/Intermediates/Pods.build/Debug-iphonesimulator/iCarousel.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}
