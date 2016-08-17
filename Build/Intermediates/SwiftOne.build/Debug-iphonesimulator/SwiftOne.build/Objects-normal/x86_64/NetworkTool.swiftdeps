@@ -6,25 +6,25 @@ provides-nominal:
 provides-member:
 - ["C8SwiftOne11NetworkTool", ""]
 provides-dynamic-lookup:
+- "parametersWithIndex"
+- "parametersWithIndex"
 - "requestHomeContentByIndex"
-- "parametersWithIndex"
-- "parametersWithIndex"
 depends-top-level:
+- !private "+"
+- !private "UnicodeScalarType"
 - !private "Alamofire"
 - !private ">"
 - "NetworkTool"
-- !private "String"
-- "NSDictionary"
-- !private "+"
-- !private "kAPI_URL_GET_HOME_CONTENT"
-- !private "UnicodeScalarType"
-- "Int"
-- !private "StringLiteralType"
-- !private "ZDBaseFunction"
-- !private "print"
 - !private "Dictionary"
-- "NSObject"
+- "NSDictionary"
+- "Int"
 - "AnyObject"
+- !private "String"
+- "NSObject"
+- !private "StringLiteralType"
+- !private "kAPI_URL_GET_HOME_CONTENT"
+- !private "print"
+- !private "ZDBaseFunction"
 depends-member:
 - !private ["Ps9AnyObject", "Alamofire"]
 - !private ["Ps9AnyObject", "ZDBaseFunction"]

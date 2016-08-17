@@ -9,9 +9,9 @@
 import Foundation
 
 class ZDContent: NSObject {
-    var strLastUpdateDate: String?
-    var strDayDiffer: String?
-    var strHpId: String?
+    var strLastUpdateDate: String?//最后更新时间
+    var strDayDiffer: String?//日期xxx年-xx月-xx日
+    var strHpId: String?//
     var strHpTitle: String?
     var strThumbnailUrl: String?
     var strOriginalImgUrl: String?

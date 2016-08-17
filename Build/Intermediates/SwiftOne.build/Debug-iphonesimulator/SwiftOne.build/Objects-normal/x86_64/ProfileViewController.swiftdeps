@@ -8,9 +8,9 @@ provides-member:
 provides-dynamic-lookup:
 - "viewDidLoad"
 depends-top-level:
-- !private "BooleanLiteralType"
 - "ViewController"
 - "ProfileViewController"
+- !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "SetNavigationBarShowRightBarButtonItem"]
 - ["Ps9AnyObject", "init"]

@@ -97,7 +97,7 @@ class RightRefreshView: UIView,iCarouselDelegate,iCarouselDataSource {
         canScrollBack = true
         draggedx = 0
         lastItemIndex = -1
-        setupViews()
+//        setupViews()
     }
     override func delete(sender: AnyObject?) {
         delegate = nil
@@ -136,19 +136,17 @@ class RightRefreshView: UIView,iCarouselDelegate,iCarouselDataSource {
     }
     var RefreshViewDataSource: RightPullToRefreshViewDataSource? {
         didSet {
-//            if self.dataSource != RefreshViewDataSource {
+
                 self.dataSource = RefreshViewDataSource
-            Carouse.reloadData()
-//            }
-        
-        
+                Carouse.reloadData()
         }
     
     
     }
-    private func setupViews() {
-        Carouse.frame = self.bounds
+     func setupViews() {
+      
         ({(ZDiCarouse: iCarousel) in
+            ZDiCarouse.frame = self.bounds
             ZDiCarouse.delegate = self
             ZDiCarouse.dataSource = self
             ZDiCarouse.type = iCarouselType.Linear
@@ -209,7 +207,6 @@ class RightRefreshView: UIView,iCarouselDelegate,iCarouselDataSource {
     func reloadItemIndex(index: NSInteger, animated: Bool) -> Void {
         Carouse.reloadItemAtIndex(index, animated: animated)
     }
-    
     func itemViewIndex(index: NSInteger) -> UIView {
         return Carouse.itemViewAtIndex(index)!
         
@@ -243,24 +240,24 @@ class RightRefreshView: UIView,iCarouselDelegate,iCarouselDataSource {
     //Delegate&DataSource
     func numberOfItemsInCarousel(carousel: iCarousel) -> Int
     {
-        if dataSource?.numberOfItemsInRightPullRefreshView(self) != nil {
+//        if dataSource?.numberOfItemsInRightPullRefreshView(self) != nil {
             numberOfItems = (dataSource?.numberOfItemsInRightPullRefreshView(self))!
              return numberOfItems
-        }else {
-         return 0
-        
-        }
+//        }else {
+//         return 0
+//        
+//        }
         
     }
     
     func carousel(carousel: iCarousel, viewForItemAtIndex index: Int, reusingView view: UIView?) -> UIView {
         
-        if dataSource?.rightPullRefreshView(self, ViewForitemAtIndex: index, resuingView: view!) != nil {
-            return (dataSource?.rightPullRefreshView(self, ViewForitemAtIndex: index, resuingView: view!))!
-        }else {
-            return UIView()
-        
-        }
+//        if dataSource?.rightPullRefreshView(self, ViewForitemAtIndex: index, resuingView: view!) != nil {
+            return (dataSource?.rightPullRefreshView(self, ViewForitemAtIndex: index, resuingView: view))!
+//        }else {
+//            return UIView()
+//        
+//        }
         
         
     }

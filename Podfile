@@ -7,4 +7,5 @@ pod 'iCarousel', '~> 1.8.1'
 pod 'SnapKit', '~> 0.15.0'
 pod 'Kingfisher', '~> 2.4'
 pod 'SwiftyJSON'
+
 end 

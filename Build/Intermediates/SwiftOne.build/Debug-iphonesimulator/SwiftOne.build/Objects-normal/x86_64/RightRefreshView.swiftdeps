@@ -12,64 +12,64 @@ provides-member:
 - ["P8SwiftOne32RightPullToRefreshViewDataSource", ""]
 - ["C8SwiftOne16RightRefreshView", ""]
 provides-dynamic-lookup:
-- "carouselItemWidth"
-- "carouselCurrentItemIndexDidChange"
-- "carouselDidScroll"
-- "carouselDidEndDragging"
-- "delete"
 - "numberOfItemsInCarousel"
 - "endRefresh"
-- "itemViewIndex"
-- "carousel"
-- "inisertItemIndex"
-- "currentItemIndex"
-- "currentItemView"
-- "reloaData"
+- "carouselDidScroll"
 - "carouselDidEndScrollingAnimation"
-- "reloadItemIndex"
+- "itemViewIndex"
+- "carouselItemWidth"
+- "inisertItemIndex"
+- "carousel"
+- "delete"
+- "currentItemView"
 - "contentView"
+- "setupViews"
+- "carouselDidEndDragging"
+- "carouselCurrentItemIndexDidChange"
+- "reloaData"
+- "reloadItemIndex"
+- "currentItemIndex"
 depends-top-level:
-- "iCarouselDelegate"
-- "AnyObject"
-- !private "/"
-- "iCarouselDataSource"
-- !private "+"
-- !private "iCarouselType"
-- "UIView"
-- "NSCoder"
-- "NSInteger"
-- !private "CGRectGetMaxX"
-- !private "CGRectGetWidth"
-- !private "CGRectGetMaxY"
-- !private "&&"
-- !private "fabs"
-- !private "!"
 - !private "NSTextAlignment"
-- !private ">="
-- "CGFloat"
+- "UILabel"
+- !private "iCarouselType"
+- !private "CGRectGetWidth"
+- !private "!"
+- !private "-"
+- "NSInteger"
+- !private "CGRectGetMaxY"
+- !private "/"
+- !private "CGRectMake"
+- "AnyObject"
+- !private "fatalError"
+- !private "+="
+- "iCarousel"
+- !private "CGRectGetHeight"
 - !private "UIFont"
 - !private "BooleanLiteralType"
-- "CGRect"
-- !private "-"
-- "RightPullToRefreshViewDelegate"
-- "Void"
-- !private "+="
-- !private "!="
-- !private "CGRectZero"
-- "Int"
-- !private "fatalError"
-- !private "CGRectMake"
 - "RightPullToRefreshViewDataSource"
-- "iCarousel"
-- !private "UIColor"
-- !private "StringLiteralType"
-- "RightRefreshView"
-- "UILabel"
 - !private "<="
-- !private "*"
-- !private "CGRectGetHeight"
-- "Bool"
+- "CGRect"
+- "UIView"
+- "RightRefreshView"
 - !private "CGSizeMake"
+- !private "+"
+- "Int"
+- "Void"
+- "CGFloat"
+- !private "*"
+- !private "CGRectZero"
+- !private "StringLiteralType"
+- !private ">="
+- "RightPullToRefreshViewDelegate"
+- "iCarouselDelegate"
+- !private "&&"
+- !private "fabs"
+- "iCarouselDataSource"
+- !private "UIColor"
+- "Bool"
+- !private "CGRectGetMaxX"
+- "NSCoder"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "IntegerLiteralType"]
 - !private ["Ps16AbsoluteValuable", "Stride"]
@@ -942,7 +942,7 @@ depends-member:
 - !private ["C8SwiftOne16RightRefreshView", "refreshLabel"]
 - ["C8SwiftOne16RightRefreshView", "reloaData"]
 - ["C8SwiftOne16RightRefreshView", "reloadItemIndex"]
-- !private ["C8SwiftOne16RightRefreshView", "setupViews"]
+- ["C8SwiftOne16RightRefreshView", "setupViews"]
 - ["Ps17SignedIntegerType", "init"]
 - !private ["Ps16SignedNumberType", "IntegerLiteralType"]
 - !private ["Ps16SignedNumberType", "Stride"]
@@ -1703,7 +1703,6 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "Stride"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
-- !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - ["Ps22_RandomAccessAmbiguity", "init"]
 - ["Ps12_Reflectable", "Bool"]
 - ["Ps12_Reflectable", "CGFloat"]
@@ -1858,7 +1857,6 @@ depends-member:
 - ["PSo19iCarouselDataSource", "numberOfItemsInCarousel"]
 - ["PSo19iCarouselDataSource", "numberOfPlaceholdersInCarousel"]
 - !private ["PSo19iCarouselDataSource", "refreshLabel"]
-- !private ["PSo19iCarouselDataSource", "setupViews"]
 - ["PSo19iCarouselDataSource", ""]
 - ["PSo17iCarouselDelegate", "Bool"]
 - ["PSo17iCarouselDelegate", "CGFloat"]
@@ -1907,7 +1905,6 @@ depends-member:
 - ["PSo17iCarouselDelegate", "numberOfItemsInCarousel"]
 - ["PSo17iCarouselDelegate", "numberOfPlaceholdersInCarousel"]
 - !private ["PSo17iCarouselDelegate", "refreshLabel"]
-- !private ["PSo17iCarouselDelegate", "setupViews"]
 - ["PSo17iCarouselDelegate", ""]
 - !private ["OSC13iCarouselType", "Linear"]
 depends-nominal:
@@ -1973,7 +1970,6 @@ depends-nominal:
 - "Ps22_IntegerArithmeticType"
 - "Ps12_IntegerType"
 - "Ps21_ObjectiveCBridgeable"
-- !private "Vs26_OptionalNilComparisonType"
 - "Ps22_RandomAccessAmbiguity"
 - "Ps12_Reflectable"
 - "Ps18_SignedIntegerType"
@@ -2011,4 +2007,4 @@ depends-external:
 - "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-Swift.h"
 - "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Headers/SwiftyJSON-umbrella.h"
 - "/Users/chenmengjia/Documents/SwiftOne/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework/Modules/module.modulemap"
-interface-hash: "ccdbabc1a51feebd00f933bb1a18a064"
+interface-hash: "f53b5993a2e5a3191769d37c4f891f17"

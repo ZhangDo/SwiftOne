@@ -40,11 +40,9 @@ class ZDBaseFunction: NSObject {
             
         }else {
             theDate = now
-        
         }
         
         stringdate = self.stringDateFromDate(theDate!) as String
-        
         return stringdate
     
     

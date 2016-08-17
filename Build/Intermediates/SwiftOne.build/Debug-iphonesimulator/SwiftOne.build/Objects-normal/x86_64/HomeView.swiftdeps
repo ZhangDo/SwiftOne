@@ -9,58 +9,57 @@ provides-member:
 - ["P8SwiftOne23praiseNumberBtnDelegate", ""]
 - ["C8SwiftOne8HomeView", ""]
 provides-dynamic-lookup:
-- "praise"
-- "startRefresh"
 - "configureViewWithHomeEntity"
-- "refreshSubviewsForNewItem"
+- "startRefresh"
+- "praise"
 - "setupViews"
+- "refreshSubviewsForNewItem"
 depends-top-level:
-- !private "NSAttributedString"
-- !private "NSParagraphStyleAttributeName"
-- "BooleanLiteralType"
-- !private "NSForegroundColorAttributeName"
-- "UIScrollView"
-- !private "NSURL"
-- "Bool"
-- !private "NSMutableParagraphStyle"
-- !private "UIControlEvents"
-- !private "NSTextAlignment"
-- !private "Dictionary"
-- !private "UIActivityIndicatorViewStyle"
-- "UILabel"
-- !private "UIEdgeInsetsMake"
-- !private "UIColor"
-- !private ">"
-- !private "UIImage"
-- "ZDContent"
-- !private "NSFontAttributeName"
-- "UIButton"
-- "Void"
-- "UIImageView"
-- !private "-"
-- !private "/"
-- !private "print"
-- !private "UnicodeScalarType"
-- !private "CGSizeMake"
-- "praiseNumberBtnDelegate"
-- "UIActivityIndicatorView"
-- "StringLiteralType"
-- !private "UIScreen"
 - !private "UIControlState"
-- !private "NSString"
-- "CGRect"
-- "UIView"
-- "UITextView"
-- !private "UIFont"
-- "CGFloat"
-- "NSCoder"
+- "UIActivityIndicatorView"
+- !private "Dictionary"
+- !private "UIScreen"
+- !private "UIActivityIndicatorViewStyle"
 - "HomeView"
-- !private "<"
-- !private "ZDBaseFunction"
-- !private "*"
+- !private "UnicodeScalarType"
+- !private "UIFont"
 - !private "&&"
-- !private "CGRectGetHeight"
+- !private "CGSizeMake"
+- "BooleanLiteralType"
+- "UILabel"
+- "UITextView"
+- "UIButton"
+- !private "-"
+- !private "UIEdgeInsetsMake"
+- !private "/"
 - !private "fatalError"
+- "Void"
+- !private ">"
+- !private "UIColor"
+- !private "<"
+- !private "NSForegroundColorAttributeName"
+- !private "NSFontAttributeName"
+- !private "NSString"
+- "ZDContent"
+- "praiseNumberBtnDelegate"
+- !private "NSURL"
+- "UIImageView"
+- "Bool"
+- !private "ZDBaseFunction"
+- "CGFloat"
+- !private "UIControlEvents"
+- "UIView"
+- !private "CGRectGetHeight"
+- "CGRect"
+- !private "UIImage"
+- !private "NSParagraphStyleAttributeName"
+- !private "NSMutableParagraphStyle"
+- "NSCoder"
+- !private "*"
+- !private "NSAttributedString"
+- "UIScrollView"
+- "StringLiteralType"
+- !private "NSTextAlignment"
 depends-member:
 - !private ["Ps9AnyObject", "CGRectGetHeight"]
 - !private ["Ps9AnyObject", "CGSizeMake"]
@@ -134,7 +133,6 @@ depends-member:
 - ["Ps9AnyObject", "paintWidth"]
 - ["Ps9AnyObject", "praise"]
 - ["Ps9AnyObject", "praiseButton"]
-- !private ["Ps9AnyObject", "print"]
 - ["Ps9AnyObject", "refreshSubviewsForNewItem"]
 - !private ["Ps9AnyObject", "right"]
 - !private ["Ps9AnyObject", "scrollEnabled"]
@@ -186,7 +184,6 @@ depends-member:
 - !private ["Ps23ArrayLiteralConvertible", "TouchUpInside"]
 - !private ["Ps23ArrayLiteralConvertible", "subscript"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["Sb", "deinit"]
 - !private ["Ps25BooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps11BooleanType", "_getBuiltinLogicValue"]
 - !private ["V12CoreGraphics7CGFloat", "deinit"]
@@ -263,7 +260,6 @@ depends-member:
 - ["Ps11CVarArgType", "paintWidth"]
 - ["Ps11CVarArgType", "praise"]
 - ["Ps11CVarArgType", "praiseButton"]
-- !private ["Ps11CVarArgType", "print"]
 - ["Ps11CVarArgType", "refreshSubviewsForNewItem"]
 - !private ["Ps11CVarArgType", "scrollEnabled"]
 - !private ["Ps11CVarArgType", "scrollsToTop"]
@@ -302,7 +298,6 @@ depends-member:
 - ["Ps11CVarArgType", "volLabel"]
 - !private ["Ps11CVarArgType", "whiteColor"]
 - ["Ps11CVarArgType", ""]
-- !private ["Vs9Character", "deinit"]
 - !private ["Ps14CollectionType", "Generator"]
 - !private ["Ps14CollectionType", "Index"]
 - !private ["Ps14CollectionType", "Key"]
@@ -311,7 +306,6 @@ depends-member:
 - !private ["Ps14CollectionType", "_Element"]
 - !private ["Ps14CollectionType", "subscript"]
 - !private ["Ps10Comparable", "componentsSeparatedByString"]
-- !private ["Ps10Comparable", "init"]
 - !private ["P7SnapKit29ConstraintDescriptionEditable", "inset"]
 - !private ["P7SnapKit29ConstraintDescriptionEditable", "offset"]
 - !private ["P7SnapKit31ConstraintDescriptionExtendable", "equalTo"]
@@ -400,7 +394,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "paintWidth"]
 - ["Ps28CustomDebugStringConvertible", "praise"]
 - ["Ps28CustomDebugStringConvertible", "praiseButton"]
-- !private ["Ps28CustomDebugStringConvertible", "print"]
 - ["Ps28CustomDebugStringConvertible", "refreshSubviewsForNewItem"]
 - !private ["Ps28CustomDebugStringConvertible", "scrollEnabled"]
 - !private ["Ps28CustomDebugStringConvertible", "scrollsToTop"]
@@ -512,7 +505,6 @@ depends-member:
 - ["Ps23CustomStringConvertible", "paintWidth"]
 - ["Ps23CustomStringConvertible", "praise"]
 - ["Ps23CustomStringConvertible", "praiseButton"]
-- !private ["Ps23CustomStringConvertible", "print"]
 - ["Ps23CustomStringConvertible", "refreshSubviewsForNewItem"]
 - !private ["Ps23CustomStringConvertible", "scrollEnabled"]
 - !private ["Ps23CustomStringConvertible", "scrollsToTop"]
@@ -632,7 +624,6 @@ depends-member:
 - ["Ps9Equatable", "paintWidth"]
 - ["Ps9Equatable", "praise"]
 - ["Ps9Equatable", "praiseButton"]
-- !private ["Ps9Equatable", "print"]
 - ["Ps9Equatable", "refreshSubviewsForNewItem"]
 - !private ["Ps9Equatable", "scrollEnabled"]
 - !private ["Ps9Equatable", "scrollsToTop"]
@@ -675,8 +666,6 @@ depends-member:
 - !private ["Ps9Equatable", "x"]
 - ["Ps9Equatable", ""]
 - !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "componentsSeparatedByString"]
-- !private ["Ps41ExtendedGraphemeClusterLiteralConvertible", "init"]
-- !private ["Sf", "deinit"]
 - !private ["Ps13GeneratorType", "Element"]
 - !private ["Ps8Hashable", "CGRectGetHeight"]
 - !private ["Ps8Hashable", "CGSizeMake"]
@@ -750,7 +739,6 @@ depends-member:
 - ["Ps8Hashable", "paintWidth"]
 - ["Ps8Hashable", "praise"]
 - ["Ps8Hashable", "praiseButton"]
-- !private ["Ps8Hashable", "print"]
 - ["Ps8Hashable", "refreshSubviewsForNewItem"]
 - !private ["Ps8Hashable", "scrollEnabled"]
 - !private ["Ps8Hashable", "scrollsToTop"]
@@ -832,7 +820,6 @@ depends-member:
 - ["C8SwiftOne8HomeView", "deinit"]
 - !private ["C8SwiftOne8HomeView", "delegate"]
 - !private ["C8SwiftOne8HomeView", "fatalError"]
-- !private ["C8SwiftOne8HomeView", "frame"]
 - !private ["C8SwiftOne8HomeView", "indicatorView"]
 - ["C8SwiftOne8HomeView", "init"]
 - !private ["C8SwiftOne8HomeView", "monthAndYearLabel"]
@@ -844,7 +831,6 @@ depends-member:
 - !private ["C8SwiftOne8HomeView", "praise"]
 - !private ["C8SwiftOne8HomeView", "praiseButton"]
 - ["C8SwiftOne8HomeView", "praiseNumberBtnDelegate"]
-- !private ["C8SwiftOne8HomeView", "print"]
 - ["C8SwiftOne8HomeView", "refreshSubviewsForNewItem"]
 - ["C8SwiftOne8HomeView", "setupViews"]
 - ["C8SwiftOne8HomeView", "startRefresh"]
@@ -859,14 +845,8 @@ depends-member:
 - !private ["Ps9Indexable", "subscript"]
 - !private ["Vs17IndexingGenerator", "Element"]
 - !private ["Si", "deinit"]
-- !private ["Vs5Int16", "deinit"]
-- !private ["Vs5Int32", "deinit"]
-- !private ["Vs5Int64", "deinit"]
-- !private ["Vs4Int8", "deinit"]
 - !private ["P10SwiftyJSON17JSONSubscriptType", "componentsSeparatedByString"]
-- !private ["P10SwiftyJSON17JSONSubscriptType", "init"]
 - !private ["Ps14MirrorPathType", "componentsSeparatedByString"]
-- !private ["Ps14MirrorPathType", "init"]
 - !private ["Ps21MutableCollectionType", "Index"]
 - !private ["Ps21MutableCollectionType", "subscript"]
 - !private ["Ps16MutableIndexable", "Index"]
@@ -939,7 +919,6 @@ depends-member:
 - ["PSo8NSCoding", "paintWidth"]
 - ["PSo8NSCoding", "praise"]
 - ["PSo8NSCoding", "praiseButton"]
-- !private ["PSo8NSCoding", "print"]
 - ["PSo8NSCoding", "refreshSubviewsForNewItem"]
 - !private ["PSo8NSCoding", "scrollEnabled"]
 - !private ["PSo8NSCoding", "scrollsToTop"]
@@ -1060,7 +1039,6 @@ depends-member:
 - ["CSo8NSObject", "praise"]
 - ["CSo8NSObject", "praiseButton"]
 - ["CSo8NSObject", "praiseNumberBtnDelegate"]
-- !private ["CSo8NSObject", "print"]
 - ["CSo8NSObject", "refreshSubviewsForNewItem"]
 - !private ["CSo8NSObject", "scrollEnabled"]
 - !private ["CSo8NSObject", "scrollsToTop"]
@@ -1166,7 +1144,6 @@ depends-member:
 - ["PSo16NSObjectProtocol", "paintWidth"]
 - ["PSo16NSObjectProtocol", "praise"]
 - ["PSo16NSObjectProtocol", "praiseButton"]
-- !private ["PSo16NSObjectProtocol", "print"]
 - ["PSo16NSObjectProtocol", "refreshSubviewsForNewItem"]
 - !private ["PSo16NSObjectProtocol", "scrollEnabled"]
 - !private ["PSo16NSObjectProtocol", "scrollsToTop"]
@@ -1215,8 +1192,6 @@ depends-member:
 - !private ["PSo14NSSecureCoding", "stretchableImageWithLeftCapWidth"]
 - !private ["PSo14NSSecureCoding", "whiteColor"]
 - !private ["CSo8NSString", "componentsSeparatedByString"]
-- !private ["CSo8NSString", "deinit"]
-- !private ["CSo8NSString", "init"]
 - !private ["OSC15NSTextAlignment", "Center"]
 - !private ["OSC15NSTextAlignment", "Right"]
 - !private ["CSo5NSURL", "init"]
@@ -1225,7 +1200,6 @@ depends-member:
 - !private ["Ps13OptionSetType", "TouchUpInside"]
 - !private ["Sq", "deinit"]
 - !private ["Ps16OutputStreamType", "componentsSeparatedByString"]
-- !private ["Ps16OutputStreamType", "init"]
 - !private ["Ps30RangeReplaceableCollectionType", "Index"]
 - !private ["Ps30RangeReplaceableCollectionType", "subscript"]
 - !private ["Ps16RawRepresentable", "Center"]
@@ -1251,13 +1225,9 @@ depends-member:
 - !private ["Vs5Slice", "_Element"]
 - !private ["Vs12StaticString", "deinit"]
 - !private ["Ps10Streamable", "componentsSeparatedByString"]
-- !private ["Ps10Streamable", "init"]
 - !private ["SS", "componentsSeparatedByString"]
-- !private ["SS", "init"]
 - !private ["Ps30StringInterpolationConvertible", "componentsSeparatedByString"]
-- !private ["Ps30StringInterpolationConvertible", "init"]
 - !private ["Ps24StringLiteralConvertible", "componentsSeparatedByString"]
-- !private ["Ps24StringLiteralConvertible", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "CGRectGetHeight"]
 - !private ["PSo29UIAccessibilityIdentification", "CGSizeMake"]
 - !private ["PSo29UIAccessibilityIdentification", "NSAttributedString"]
@@ -1319,7 +1289,6 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "paintWidth"]
 - ["PSo29UIAccessibilityIdentification", "praise"]
 - ["PSo29UIAccessibilityIdentification", "praiseButton"]
-- !private ["PSo29UIAccessibilityIdentification", "print"]
 - ["PSo29UIAccessibilityIdentification", "refreshSubviewsForNewItem"]
 - !private ["PSo29UIAccessibilityIdentification", "scrollEnabled"]
 - !private ["PSo29UIAccessibilityIdentification", "scrollsToTop"]
@@ -1418,7 +1387,6 @@ depends-member:
 - ["PSo12UIAppearance", "paintWidth"]
 - ["PSo12UIAppearance", "praise"]
 - ["PSo12UIAppearance", "praiseButton"]
-- !private ["PSo12UIAppearance", "print"]
 - ["PSo12UIAppearance", "refreshSubviewsForNewItem"]
 - !private ["PSo12UIAppearance", "scrollEnabled"]
 - !private ["PSo12UIAppearance", "scrollsToTop"]
@@ -1509,7 +1477,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "paintWidth"]
 - ["PSo21UIAppearanceContainer", "praise"]
 - ["PSo21UIAppearanceContainer", "praiseButton"]
-- !private ["PSo21UIAppearanceContainer", "print"]
 - ["PSo21UIAppearanceContainer", "refreshSubviewsForNewItem"]
 - !private ["PSo21UIAppearanceContainer", "scrollEnabled"]
 - !private ["PSo21UIAppearanceContainer", "scrollsToTop"]
@@ -1629,7 +1596,6 @@ depends-member:
 - ["PSo17UICoordinateSpace", "paintWidth"]
 - ["PSo17UICoordinateSpace", "praise"]
 - ["PSo17UICoordinateSpace", "praiseButton"]
-- !private ["PSo17UICoordinateSpace", "print"]
 - ["PSo17UICoordinateSpace", "refreshSubviewsForNewItem"]
 - !private ["PSo17UICoordinateSpace", "scrollEnabled"]
 - !private ["PSo17UICoordinateSpace", "scrollsToTop"]
@@ -1720,7 +1686,6 @@ depends-member:
 - ["PSo13UIDynamicItem", "paintWidth"]
 - ["PSo13UIDynamicItem", "praise"]
 - ["PSo13UIDynamicItem", "praiseButton"]
-- !private ["PSo13UIDynamicItem", "print"]
 - ["PSo13UIDynamicItem", "refreshSubviewsForNewItem"]
 - !private ["PSo13UIDynamicItem", "scrollEnabled"]
 - !private ["PSo13UIDynamicItem", "scrollsToTop"]
@@ -1812,7 +1777,6 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "paintWidth"]
 - ["PSo18UIFocusEnvironment", "praise"]
 - ["PSo18UIFocusEnvironment", "praiseButton"]
-- !private ["PSo18UIFocusEnvironment", "print"]
 - ["PSo18UIFocusEnvironment", "refreshSubviewsForNewItem"]
 - !private ["PSo18UIFocusEnvironment", "scrollEnabled"]
 - !private ["PSo18UIFocusEnvironment", "scrollsToTop"]
@@ -1947,7 +1911,6 @@ depends-member:
 - ["CSo11UIResponder", "praise"]
 - ["CSo11UIResponder", "praiseButton"]
 - ["CSo11UIResponder", "praiseNumberBtnDelegate"]
-- !private ["CSo11UIResponder", "print"]
 - ["CSo11UIResponder", "refreshSubviewsForNewItem"]
 - !private ["CSo11UIResponder", "scrollEnabled"]
 - !private ["CSo11UIResponder", "scrollsToTop"]
@@ -2090,7 +2053,6 @@ depends-member:
 - ["PSo18UITraitEnvironment", "paintWidth"]
 - ["PSo18UITraitEnvironment", "praise"]
 - ["PSo18UITraitEnvironment", "praiseButton"]
-- !private ["PSo18UITraitEnvironment", "print"]
 - ["PSo18UITraitEnvironment", "refreshSubviewsForNewItem"]
 - !private ["PSo18UITraitEnvironment", "scrollEnabled"]
 - !private ["PSo18UITraitEnvironment", "scrollsToTop"]
@@ -2190,7 +2152,6 @@ depends-member:
 - ["CSo6UIView", "praise"]
 - ["CSo6UIView", "praiseButton"]
 - ["CSo6UIView", "praiseNumberBtnDelegate"]
-- !private ["CSo6UIView", "print"]
 - ["CSo6UIView", "refreshSubviewsForNewItem"]
 - !private ["CSo6UIView", "scrollEnabled"]
 - !private ["CSo6UIView", "scrollsToTop"]
@@ -2220,16 +2181,9 @@ depends-member:
 - !private ["CSo6UIView", "titleLabel"]
 - ["CSo6UIView", "volLabel"]
 - ["CSo6UIView", ""]
-- !private ["Su", "deinit"]
-- !private ["Vs6UInt16", "deinit"]
-- !private ["Vs6UInt32", "deinit"]
-- !private ["Vs6UInt64", "deinit"]
-- !private ["Vs5UInt8", "deinit"]
 - !private ["P9Alamofire20URLStringConvertible", "componentsSeparatedByString"]
 - !private ["P9Alamofire20URLStringConvertible", "init"]
-- !private ["Sc", "deinit"]
 - !private ["Ps31UnicodeScalarLiteralConvertible", "componentsSeparatedByString"]
-- !private ["Ps31UnicodeScalarLiteralConvertible", "init"]
 - !private ["C8SwiftOne14ZDBaseFunction", "homeENMarketTimeWithOriginalMarketTime"]
 - !private ["C8SwiftOne9ZDContent", "strAuthor"]
 - !private ["C8SwiftOne9ZDContent", "strContent"]
@@ -2241,13 +2195,9 @@ depends-member:
 - !private ["Ps10_ArrayType", "subscript"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "componentsSeparatedByString"]
-- !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
 - !private ["Ps32_BuiltinStringLiteralConvertible", "componentsSeparatedByString"]
-- !private ["Ps32_BuiltinStringLiteralConvertible", "init"]
 - !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "componentsSeparatedByString"]
-- !private ["Ps37_BuiltinUTF16StringLiteralConvertible", "init"]
 - !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "componentsSeparatedByString"]
-- !private ["Ps39_BuiltinUnicodeScalarLiteralConvertible", "init"]
 - !private ["Ps24_ColorLiteralConvertible", "blueColor"]
 - !private ["Ps24_ColorLiteralConvertible", "clearColor"]
 - !private ["Ps24_ColorLiteralConvertible", "init"]
@@ -2262,7 +2212,6 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "Value"]
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "componentsSeparatedByString"]
-- !private ["Ps21_ObjectiveCBridgeable", "init"]
 - !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Ps12_Reflectable", "CGRectGetHeight"]
 - !private ["Ps12_Reflectable", "CGSizeMake"]
@@ -2330,7 +2279,6 @@ depends-member:
 - ["Ps12_Reflectable", "paintWidth"]
 - ["Ps12_Reflectable", "praise"]
 - ["Ps12_Reflectable", "praiseButton"]
-- !private ["Ps12_Reflectable", "print"]
 - ["Ps12_Reflectable", "refreshSubviewsForNewItem"]
 - !private ["Ps12_Reflectable", "scrollEnabled"]
 - !private ["Ps12_Reflectable", "scrollsToTop"]
@@ -2377,7 +2325,6 @@ depends-nominal:
 - !private "VSC6CGRect"
 - !private "VSC6CGSize"
 - "Ps11CVarArgType"
-- !private "Vs9Character"
 - !private "Ps14CollectionType"
 - !private "Ps10Comparable"
 - !private "P7SnapKit29ConstraintDescriptionEditable"
@@ -2394,7 +2341,6 @@ depends-nominal:
 - !private "Sd"
 - "Ps9Equatable"
 - !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
-- !private "Sf"
 - !private "Ps13GeneratorType"
 - "Ps8Hashable"
 - "C8SwiftOne8HomeView"
@@ -2402,10 +2348,6 @@ depends-nominal:
 - !private "Ps9Indexable"
 - !private "Vs17IndexingGenerator"
 - !private "Si"
-- !private "Vs5Int16"
-- !private "Vs5Int32"
-- !private "Vs5Int64"
-- !private "Vs4Int8"
 - !private "P10SwiftyJSON17JSONSubscriptType"
 - !private "Ps14MirrorPathType"
 - !private "Ps21MutableCollectionType"
@@ -2465,13 +2407,7 @@ depends-nominal:
 - "CSo10UITextView"
 - "PSo18UITraitEnvironment"
 - "CSo6UIView"
-- !private "Su"
-- !private "Vs6UInt16"
-- !private "Vs6UInt32"
-- !private "Vs6UInt64"
-- !private "Vs5UInt8"
 - !private "P9Alamofire20URLStringConvertible"
-- !private "Sc"
 - !private "Ps31UnicodeScalarLiteralConvertible"
 - !private "C8SwiftOne14ZDBaseFunction"
 - !private "C8SwiftOne9ZDContent"

@@ -278,6 +278,7 @@ SWIFT_CLASS("_TtC8SwiftOne16RightRefreshView")
 @property (nonatomic, readonly) NSInteger currentItemIndex;
 @property (nonatomic, readonly, strong) UIView * _Nonnull currentItemView;
 @property (nonatomic, readonly, strong) UIView * _Nonnull contentView;
+- (void)setupViews;
 
 /// 插入一个新的Item
 ///

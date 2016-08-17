@@ -39,8 +39,6 @@ class NetworkTool: NSObject {
             let parameters = ["strDate":date,"strRow":"1"]
             return parameters
             
-            
-            
         }else {
             let index1 = index + 1
             
@@ -55,8 +53,8 @@ class NetworkTool: NSObject {
     }
     
     func requestHomeContentByIndex(index: Int,successBlock: SuccessBlock,failBlock: FailBlock) {
-        let parameters = self.parametersWithIndex(index)
         
+        let parameters = self.parametersWithIndex(index)
         Alamofire.request(.GET, kAPI_URL_GET_HOME_CONTENT,parameters: parameters as? [String : AnyObject],encoding: .URL,headers:nil)
         .validate()
         .responseJSON { (respons) in
@@ -66,13 +64,9 @@ class NetworkTool: NSObject {
             case.Failure(let error):
                 failBlock(error: error)
                 print(error)
-            
             }
-            
         }
-       
         
-    
     }
     //计算时间日期
     func parametersWithIndex(index: Int) -> NSDictionary {

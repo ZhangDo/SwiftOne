@@ -6,53 +6,51 @@ provides-nominal:
 provides-member:
 - ["C8SwiftOne18HomeViewController", ""]
 provides-dynamic-lookup:
-- "rightPullRefreshViewCurrentItemAtIndexDidChange"
-- "numberOfItemsInRightPullRefreshView"
-- "endRequestHomeContent"
-- "rightPullRefreshViewDidScrollToLastItem"
-- "praiseBtn"
-- "rightPullRefreshViewRefrshing"
-- "share"
-- "endRefreshing"
-- "viewDidLoad"
 - "requestHomeContentAtIndex"
+- "rightPullRefreshViewCurrentItemAtIndexDidChange"
+- "viewDidLoad"
 - "rightPullRefreshView"
 - "rightPullRefreshView"
+- "share"
+- "endRequestHomeContent"
+- "rightPullRefreshViewRefrshing"
+- "endRefreshing"
+- "praiseBtn"
+- "rightPullRefreshViewDidScrollToLastItem"
+- "numberOfItemsInRightPullRefreshView"
 depends-top-level:
-- !private "CGRectGetWidth"
-- !private "CGRectGetHeight"
-- !private "AnyObject"
-- "NSMutableDictionary"
-- !private "String"
-- "HomeViewController"
-- "Bool"
-- "NSInteger"
-- !private "NetworkTool"
-- !private "ZDContent"
-- !private "BooleanLiteralType"
+- "UnicodeScalarType"
 - "RightPullToRefreshViewDelegate"
-- "praiseNumberBtnDelegate"
 - !private "-"
+- "ViewController"
+- !private "CGRectMake"
+- !private "CGRectGetHeight"
+- !private "max"
+- !private "ZDContent"
+- !private "HomeView"
 - !private "print"
-- !private "||"
-- "HomeModel"
+- !private "BooleanLiteralType"
+- "RightPullToRefreshViewDataSource"
+- "RightRefreshView"
+- "praiseNumberBtnDelegate"
+- "NSMutableDictionary"
+- "Int"
 - "UIView"
+- !private "||"
+- !private "String"
 - !private "=="
 - !private "UIScreen"
-- "RightRefreshView"
-- "StringLiteralType"
-- "ViewController"
-- "Int"
-- "RightPullToRefreshViewDataSource"
-- "UnicodeScalarType"
-- !private "CGRectMake"
+- !private "NetworkTool"
+- "HomeModel"
+- "Bool"
+- "HomeViewController"
 - "Void"
-- !private "HomeView"
-- !private "max"
+- "NSInteger"
+- !private "AnyObject"
+- "StringLiteralType"
 depends-member:
 - ["Ps9AnyObject", "Bool"]
 - !private ["Ps9AnyObject", "CGRectGetHeight"]
-- !private ["Ps9AnyObject", "CGRectGetWidth"]
 - !private ["Ps9AnyObject", "CGRectMake"]
 - !private ["Ps9AnyObject", "HomeModel"]
 - !private ["Ps9AnyObject", "HomeView"]
@@ -62,6 +60,7 @@ depends-member:
 - ["Ps9AnyObject", "RightRefreshView"]
 - !private ["Ps9AnyObject", "SetNavigationBarShowRightBarButtonItem"]
 - !private ["Ps9AnyObject", "UIScreen"]
+- !private ["Ps9AnyObject", "UIView"]
 - !private ["Ps9AnyObject", "addSubview"]
 - !private ["Ps9AnyObject", "allKeys"]
 - !private ["Ps9AnyObject", "bounds"]
@@ -93,11 +92,11 @@ depends-member:
 - ["Ps9AnyObject", "rightPullRefreshViewRefrshing"]
 - ["Ps9AnyObject", "rightPullToReshView"]
 - !private ["Ps9AnyObject", "setObject"]
+- !private ["Ps9AnyObject", "setupViews"]
 - ["Ps9AnyObject", "share"]
 - !private ["Ps9AnyObject", "strHpId"]
 - !private ["Ps9AnyObject", "strLastUpdateDate"]
 - !private ["Ps9AnyObject", "subscript"]
-- !private ["Ps9AnyObject", "subviews"]
 - !private ["Ps9AnyObject", "tabBar"]
 - !private ["Ps9AnyObject", "tabBarController"]
 - !private ["Ps9AnyObject", "view"]
@@ -108,13 +107,10 @@ depends-member:
 - !private ["Sa", "Index"]
 - !private ["Sa", "SubSequence"]
 - !private ["Sa", "count"]
-- !private ["Sa", "deinit"]
-- !private ["Sa", "subscript"]
 - !private ["Ps23ArrayLiteralConvertible", "Generator"]
 - !private ["Ps23ArrayLiteralConvertible", "Index"]
 - !private ["Ps23ArrayLiteralConvertible", "SubSequence"]
 - !private ["Ps23ArrayLiteralConvertible", "count"]
-- !private ["Ps23ArrayLiteralConvertible", "subscript"]
 - !private ["Vs10ArraySlice", "Generator"]
 - !private ["Vs10ArraySlice", "Index"]
 - !private ["Ps22BidirectionalIndexType", "Distance"]
@@ -136,7 +132,6 @@ depends-member:
 - !private ["VSC6CGSize", "width"]
 - ["Ps11CVarArgType", "Bool"]
 - !private ["Ps11CVarArgType", "CGRectGetHeight"]
-- !private ["Ps11CVarArgType", "CGRectGetWidth"]
 - !private ["Ps11CVarArgType", "CGRectMake"]
 - !private ["Ps11CVarArgType", "Distance"]
 - !private ["Ps11CVarArgType", "HomeModel"]
@@ -148,6 +143,7 @@ depends-member:
 - ["Ps11CVarArgType", "RightRefreshView"]
 - !private ["Ps11CVarArgType", "SetNavigationBarShowRightBarButtonItem"]
 - !private ["Ps11CVarArgType", "UIScreen"]
+- !private ["Ps11CVarArgType", "UIView"]
 - !private ["Ps11CVarArgType", "addSubview"]
 - !private ["Ps11CVarArgType", "allKeys"]
 - !private ["Ps11CVarArgType", "bounds"]
@@ -179,11 +175,11 @@ depends-member:
 - ["Ps11CVarArgType", "rightPullRefreshViewRefrshing"]
 - ["Ps11CVarArgType", "rightPullToReshView"]
 - !private ["Ps11CVarArgType", "setObject"]
+- !private ["Ps11CVarArgType", "setupViews"]
 - ["Ps11CVarArgType", "share"]
 - !private ["Ps11CVarArgType", "strHpId"]
 - !private ["Ps11CVarArgType", "strLastUpdateDate"]
 - !private ["Ps11CVarArgType", "subscript"]
-- !private ["Ps11CVarArgType", "subviews"]
 - !private ["Ps11CVarArgType", "tabBar"]
 - !private ["Ps11CVarArgType", "tabBarController"]
 - !private ["Ps11CVarArgType", "view"]
@@ -194,15 +190,12 @@ depends-member:
 - !private ["Ps14CollectionType", "Generator"]
 - !private ["Ps14CollectionType", "Index"]
 - !private ["Ps14CollectionType", "SubSequence"]
-- !private ["Ps14CollectionType", "_Element"]
 - !private ["Ps14CollectionType", "count"]
-- !private ["Ps14CollectionType", "subscript"]
 - !private ["Ps10Comparable", "Distance"]
 - !private ["Ps10Comparable", "IntegerLiteralType"]
 - ["Ps10Comparable", "init"]
 - ["Ps28CustomDebugStringConvertible", "Bool"]
 - !private ["Ps28CustomDebugStringConvertible", "CGRectGetHeight"]
-- !private ["Ps28CustomDebugStringConvertible", "CGRectGetWidth"]
 - !private ["Ps28CustomDebugStringConvertible", "CGRectMake"]
 - !private ["Ps28CustomDebugStringConvertible", "Generator"]
 - !private ["Ps28CustomDebugStringConvertible", "HomeModel"]
@@ -215,6 +208,7 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "SetNavigationBarShowRightBarButtonItem"]
 - !private ["Ps28CustomDebugStringConvertible", "SubSequence"]
 - !private ["Ps28CustomDebugStringConvertible", "UIScreen"]
+- !private ["Ps28CustomDebugStringConvertible", "UIView"]
 - !private ["Ps28CustomDebugStringConvertible", "addSubview"]
 - !private ["Ps28CustomDebugStringConvertible", "allKeys"]
 - !private ["Ps28CustomDebugStringConvertible", "bounds"]
@@ -247,11 +241,11 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", "rightPullRefreshViewRefrshing"]
 - ["Ps28CustomDebugStringConvertible", "rightPullToReshView"]
 - !private ["Ps28CustomDebugStringConvertible", "setObject"]
+- !private ["Ps28CustomDebugStringConvertible", "setupViews"]
 - ["Ps28CustomDebugStringConvertible", "share"]
 - !private ["Ps28CustomDebugStringConvertible", "strHpId"]
 - !private ["Ps28CustomDebugStringConvertible", "strLastUpdateDate"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
-- !private ["Ps28CustomDebugStringConvertible", "subviews"]
 - !private ["Ps28CustomDebugStringConvertible", "tabBar"]
 - !private ["Ps28CustomDebugStringConvertible", "tabBarController"]
 - !private ["Ps28CustomDebugStringConvertible", "view"]
@@ -260,7 +254,6 @@ depends-member:
 - ["Ps28CustomDebugStringConvertible", ""]
 - ["Ps23CustomStringConvertible", "Bool"]
 - !private ["Ps23CustomStringConvertible", "CGRectGetHeight"]
-- !private ["Ps23CustomStringConvertible", "CGRectGetWidth"]
 - !private ["Ps23CustomStringConvertible", "CGRectMake"]
 - !private ["Ps23CustomStringConvertible", "Distance"]
 - !private ["Ps23CustomStringConvertible", "Generator"]
@@ -275,6 +268,7 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "SetNavigationBarShowRightBarButtonItem"]
 - !private ["Ps23CustomStringConvertible", "SubSequence"]
 - !private ["Ps23CustomStringConvertible", "UIScreen"]
+- !private ["Ps23CustomStringConvertible", "UIView"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "addSubview"]
 - !private ["Ps23CustomStringConvertible", "allKeys"]
@@ -308,11 +302,11 @@ depends-member:
 - ["Ps23CustomStringConvertible", "rightPullRefreshViewRefrshing"]
 - ["Ps23CustomStringConvertible", "rightPullToReshView"]
 - !private ["Ps23CustomStringConvertible", "setObject"]
+- !private ["Ps23CustomStringConvertible", "setupViews"]
 - ["Ps23CustomStringConvertible", "share"]
 - !private ["Ps23CustomStringConvertible", "strHpId"]
 - !private ["Ps23CustomStringConvertible", "strLastUpdateDate"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
-- !private ["Ps23CustomStringConvertible", "subviews"]
 - !private ["Ps23CustomStringConvertible", "tabBar"]
 - !private ["Ps23CustomStringConvertible", "tabBarController"]
 - !private ["Ps23CustomStringConvertible", "view"]
@@ -327,7 +321,6 @@ depends-member:
 - !private ["Sd", "deinit"]
 - ["Ps9Equatable", "Bool"]
 - !private ["Ps9Equatable", "CGRectGetHeight"]
-- !private ["Ps9Equatable", "CGRectGetWidth"]
 - !private ["Ps9Equatable", "CGRectMake"]
 - !private ["Ps9Equatable", "Distance"]
 - !private ["Ps9Equatable", "HomeModel"]
@@ -339,6 +332,7 @@ depends-member:
 - ["Ps9Equatable", "RightRefreshView"]
 - !private ["Ps9Equatable", "SetNavigationBarShowRightBarButtonItem"]
 - !private ["Ps9Equatable", "UIScreen"]
+- !private ["Ps9Equatable", "UIView"]
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "addSubview"]
 - !private ["Ps9Equatable", "allKeys"]
@@ -372,12 +366,12 @@ depends-member:
 - ["Ps9Equatable", "rightPullRefreshViewRefrshing"]
 - ["Ps9Equatable", "rightPullToReshView"]
 - !private ["Ps9Equatable", "setObject"]
+- !private ["Ps9Equatable", "setupViews"]
 - ["Ps9Equatable", "share"]
 - !private ["Ps9Equatable", "size"]
 - !private ["Ps9Equatable", "strHpId"]
 - !private ["Ps9Equatable", "strLastUpdateDate"]
 - !private ["Ps9Equatable", "subscript"]
-- !private ["Ps9Equatable", "subviews"]
 - !private ["Ps9Equatable", "tabBar"]
 - !private ["Ps9Equatable", "tabBarController"]
 - !private ["Ps9Equatable", "view"]
@@ -390,10 +384,8 @@ depends-member:
 - !private ["Ps16ForwardIndexType", "Distance"]
 - !private ["Ps16ForwardIndexType", "IntegerLiteralType"]
 - ["Ps16ForwardIndexType", "init"]
-- !private ["Ps13GeneratorType", "Element"]
 - ["Ps8Hashable", "Bool"]
 - !private ["Ps8Hashable", "CGRectGetHeight"]
-- !private ["Ps8Hashable", "CGRectGetWidth"]
 - !private ["Ps8Hashable", "CGRectMake"]
 - !private ["Ps8Hashable", "Distance"]
 - !private ["Ps8Hashable", "HomeModel"]
@@ -405,6 +397,7 @@ depends-member:
 - ["Ps8Hashable", "RightRefreshView"]
 - !private ["Ps8Hashable", "SetNavigationBarShowRightBarButtonItem"]
 - !private ["Ps8Hashable", "UIScreen"]
+- !private ["Ps8Hashable", "UIView"]
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "addSubview"]
 - !private ["Ps8Hashable", "allKeys"]
@@ -437,11 +430,11 @@ depends-member:
 - ["Ps8Hashable", "rightPullRefreshViewRefrshing"]
 - ["Ps8Hashable", "rightPullToReshView"]
 - !private ["Ps8Hashable", "setObject"]
+- !private ["Ps8Hashable", "setupViews"]
 - ["Ps8Hashable", "share"]
 - !private ["Ps8Hashable", "strHpId"]
 - !private ["Ps8Hashable", "strLastUpdateDate"]
 - !private ["Ps8Hashable", "subscript"]
-- !private ["Ps8Hashable", "subviews"]
 - !private ["Ps8Hashable", "tabBar"]
 - !private ["Ps8Hashable", "tabBarController"]
 - !private ["Ps8Hashable", "view"]
@@ -458,7 +451,6 @@ depends-member:
 - !private ["C8SwiftOne18HomeViewController", "AnyObject"]
 - ["C8SwiftOne18HomeViewController", "Bool"]
 - !private ["C8SwiftOne18HomeViewController", "CGRectGetHeight"]
-- !private ["C8SwiftOne18HomeViewController", "CGRectGetWidth"]
 - !private ["C8SwiftOne18HomeViewController", "CGRectMake"]
 - ["C8SwiftOne18HomeViewController", "HomeModel"]
 - !private ["C8SwiftOne18HomeViewController", "HomeView"]
@@ -499,10 +491,7 @@ depends-member:
 - !private ["Ps9Indexable", "Generator"]
 - !private ["Ps9Indexable", "Index"]
 - !private ["Ps9Indexable", "SubSequence"]
-- !private ["Ps9Indexable", "_Element"]
 - !private ["Ps9Indexable", "count"]
-- !private ["Ps9Indexable", "subscript"]
-- !private ["Vs17IndexingGenerator", "Element"]
 - !private ["Si", "Distance"]
 - !private ["Si", "IntegerLiteralType"]
 - !private ["Si", "deinit"]
@@ -530,20 +519,16 @@ depends-member:
 - !private ["Ps21MutableCollectionType", "Index"]
 - !private ["Ps21MutableCollectionType", "SubSequence"]
 - !private ["Ps21MutableCollectionType", "count"]
-- !private ["Ps21MutableCollectionType", "subscript"]
 - !private ["Ps16MutableIndexable", "Generator"]
 - !private ["Ps16MutableIndexable", "Index"]
 - !private ["Ps16MutableIndexable", "SubSequence"]
 - !private ["Ps16MutableIndexable", "count"]
-- !private ["Ps16MutableIndexable", "subscript"]
 - !private ["Ps16MutableSliceable", "Generator"]
 - !private ["Ps16MutableSliceable", "Index"]
 - !private ["Ps16MutableSliceable", "SubSequence"]
 - !private ["Ps16MutableSliceable", "count"]
-- !private ["Ps16MutableSliceable", "subscript"]
 - ["PSo8NSCoding", "Bool"]
 - !private ["PSo8NSCoding", "CGRectGetHeight"]
-- !private ["PSo8NSCoding", "CGRectGetWidth"]
 - !private ["PSo8NSCoding", "CGRectMake"]
 - !private ["PSo8NSCoding", "HomeModel"]
 - !private ["PSo8NSCoding", "HomeView"]
@@ -553,6 +538,7 @@ depends-member:
 - ["PSo8NSCoding", "RightRefreshView"]
 - !private ["PSo8NSCoding", "SetNavigationBarShowRightBarButtonItem"]
 - !private ["PSo8NSCoding", "UIScreen"]
+- !private ["PSo8NSCoding", "UIView"]
 - !private ["PSo8NSCoding", "addSubview"]
 - !private ["PSo8NSCoding", "allKeys"]
 - !private ["PSo8NSCoding", "bounds"]
@@ -582,9 +568,9 @@ depends-member:
 - ["PSo8NSCoding", "rightPullRefreshViewRefrshing"]
 - ["PSo8NSCoding", "rightPullToReshView"]
 - !private ["PSo8NSCoding", "setObject"]
+- !private ["PSo8NSCoding", "setupViews"]
 - ["PSo8NSCoding", "share"]
 - !private ["PSo8NSCoding", "subscript"]
-- !private ["PSo8NSCoding", "subviews"]
 - !private ["PSo8NSCoding", "tabBar"]
 - !private ["PSo8NSCoding", "tabBarController"]
 - !private ["PSo8NSCoding", "view"]
@@ -603,7 +589,6 @@ depends-member:
 - !private ["CSo12NSDictionary", "subscript"]
 - ["PSo26NSExtensionRequestHandling", "Bool"]
 - !private ["PSo26NSExtensionRequestHandling", "CGRectGetHeight"]
-- !private ["PSo26NSExtensionRequestHandling", "CGRectGetWidth"]
 - !private ["PSo26NSExtensionRequestHandling", "CGRectMake"]
 - !private ["PSo26NSExtensionRequestHandling", "HomeModel"]
 - !private ["PSo26NSExtensionRequestHandling", "HomeView"]
@@ -613,6 +598,7 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "RightRefreshView"]
 - !private ["PSo26NSExtensionRequestHandling", "SetNavigationBarShowRightBarButtonItem"]
 - !private ["PSo26NSExtensionRequestHandling", "UIScreen"]
+- !private ["PSo26NSExtensionRequestHandling", "UIView"]
 - ["PSo26NSExtensionRequestHandling", "endRefreshing"]
 - ["PSo26NSExtensionRequestHandling", "endRequestHomeContent"]
 - ["PSo26NSExtensionRequestHandling", "init"]
@@ -654,7 +640,6 @@ depends-member:
 - !private ["CSo8NSObject", "AnyObject"]
 - ["CSo8NSObject", "Bool"]
 - !private ["CSo8NSObject", "CGRectGetHeight"]
-- !private ["CSo8NSObject", "CGRectGetWidth"]
 - !private ["CSo8NSObject", "CGRectMake"]
 - ["CSo8NSObject", "HomeModel"]
 - !private ["CSo8NSObject", "HomeView"]
@@ -674,6 +659,7 @@ depends-member:
 - !private ["CSo8NSObject", "bounds"]
 - !private ["CSo8NSObject", "configureViewWithHomeEntity"]
 - !private ["CSo8NSObject", "dataSource"]
+- !private ["CSo8NSObject", "deinit"]
 - !private ["CSo8NSObject", "delegate"]
 - !private ["CSo8NSObject", "endRefresh"]
 - ["CSo8NSObject", "endRefreshing"]
@@ -700,11 +686,11 @@ depends-member:
 - ["CSo8NSObject", "rightPullRefreshViewRefrshing"]
 - ["CSo8NSObject", "rightPullToReshView"]
 - !private ["CSo8NSObject", "setObject"]
+- !private ["CSo8NSObject", "setupViews"]
 - ["CSo8NSObject", "share"]
 - !private ["CSo8NSObject", "strHpId"]
 - !private ["CSo8NSObject", "strLastUpdateDate"]
 - !private ["CSo8NSObject", "subscript"]
-- !private ["CSo8NSObject", "subviews"]
 - !private ["CSo8NSObject", "tabBar"]
 - !private ["CSo8NSObject", "tabBarController"]
 - !private ["CSo8NSObject", "view"]
@@ -712,7 +698,6 @@ depends-member:
 - !private ["CSo8NSObject", "zz_dicToModel"]
 - ["PSo16NSObjectProtocol", "Bool"]
 - !private ["PSo16NSObjectProtocol", "CGRectGetHeight"]
-- !private ["PSo16NSObjectProtocol", "CGRectGetWidth"]
 - !private ["PSo16NSObjectProtocol", "CGRectMake"]
 - !private ["PSo16NSObjectProtocol", "HomeModel"]
 - !private ["PSo16NSObjectProtocol", "HomeView"]
@@ -722,6 +707,7 @@ depends-member:
 - ["PSo16NSObjectProtocol", "RightRefreshView"]
 - !private ["PSo16NSObjectProtocol", "SetNavigationBarShowRightBarButtonItem"]
 - !private ["PSo16NSObjectProtocol", "UIScreen"]
+- !private ["PSo16NSObjectProtocol", "UIView"]
 - !private ["PSo16NSObjectProtocol", "addSubview"]
 - !private ["PSo16NSObjectProtocol", "allKeys"]
 - !private ["PSo16NSObjectProtocol", "bounds"]
@@ -753,11 +739,11 @@ depends-member:
 - ["PSo16NSObjectProtocol", "rightPullRefreshViewRefrshing"]
 - ["PSo16NSObjectProtocol", "rightPullToReshView"]
 - !private ["PSo16NSObjectProtocol", "setObject"]
+- !private ["PSo16NSObjectProtocol", "setupViews"]
 - ["PSo16NSObjectProtocol", "share"]
 - !private ["PSo16NSObjectProtocol", "strHpId"]
 - !private ["PSo16NSObjectProtocol", "strLastUpdateDate"]
 - !private ["PSo16NSObjectProtocol", "subscript"]
-- !private ["PSo16NSObjectProtocol", "subviews"]
 - !private ["PSo16NSObjectProtocol", "tabBar"]
 - !private ["PSo16NSObjectProtocol", "tabBarController"]
 - !private ["PSo16NSObjectProtocol", "view"]
@@ -782,10 +768,8 @@ depends-member:
 - !private ["Ps30RangeReplaceableCollectionType", "Index"]
 - !private ["Ps30RangeReplaceableCollectionType", "SubSequence"]
 - !private ["Ps30RangeReplaceableCollectionType", "count"]
-- !private ["Ps30RangeReplaceableCollectionType", "subscript"]
 - ["P8SwiftOne32RightPullToRefreshViewDataSource", "Bool"]
 - !private ["P8SwiftOne32RightPullToRefreshViewDataSource", "CGRectGetHeight"]
-- !private ["P8SwiftOne32RightPullToRefreshViewDataSource", "CGRectGetWidth"]
 - !private ["P8SwiftOne32RightPullToRefreshViewDataSource", "CGRectMake"]
 - !private ["P8SwiftOne32RightPullToRefreshViewDataSource", "HomeModel"]
 - !private ["P8SwiftOne32RightPullToRefreshViewDataSource", "HomeView"]
@@ -795,6 +779,7 @@ depends-member:
 - ["P8SwiftOne32RightPullToRefreshViewDataSource", "RightRefreshView"]
 - !private ["P8SwiftOne32RightPullToRefreshViewDataSource", "SetNavigationBarShowRightBarButtonItem"]
 - !private ["P8SwiftOne32RightPullToRefreshViewDataSource", "UIScreen"]
+- !private ["P8SwiftOne32RightPullToRefreshViewDataSource", "UIView"]
 - !private ["P8SwiftOne32RightPullToRefreshViewDataSource", "endRefreshing"]
 - !private ["P8SwiftOne32RightPullToRefreshViewDataSource", "endRequestHomeContent"]
 - !private ["P8SwiftOne32RightPullToRefreshViewDataSource", "isRefreshing"]
@@ -816,7 +801,6 @@ depends-member:
 - ["P8SwiftOne32RightPullToRefreshViewDataSource", ""]
 - ["P8SwiftOne30RightPullToRefreshViewDelegate", "Bool"]
 - !private ["P8SwiftOne30RightPullToRefreshViewDelegate", "CGRectGetHeight"]
-- !private ["P8SwiftOne30RightPullToRefreshViewDelegate", "CGRectGetWidth"]
 - !private ["P8SwiftOne30RightPullToRefreshViewDelegate", "CGRectMake"]
 - !private ["P8SwiftOne30RightPullToRefreshViewDelegate", "HomeModel"]
 - !private ["P8SwiftOne30RightPullToRefreshViewDelegate", "HomeView"]
@@ -826,6 +810,7 @@ depends-member:
 - ["P8SwiftOne30RightPullToRefreshViewDelegate", "RightRefreshView"]
 - !private ["P8SwiftOne30RightPullToRefreshViewDelegate", "SetNavigationBarShowRightBarButtonItem"]
 - !private ["P8SwiftOne30RightPullToRefreshViewDelegate", "UIScreen"]
+- !private ["P8SwiftOne30RightPullToRefreshViewDelegate", "UIView"]
 - !private ["P8SwiftOne30RightPullToRefreshViewDelegate", "endRefreshing"]
 - !private ["P8SwiftOne30RightPullToRefreshViewDelegate", "endRequestHomeContent"]
 - !private ["P8SwiftOne30RightPullToRefreshViewDelegate", "isRefreshing"]
@@ -848,14 +833,12 @@ depends-member:
 - !private ["C8SwiftOne16RightRefreshView", "dataSource"]
 - !private ["C8SwiftOne16RightRefreshView", "delegate"]
 - !private ["C8SwiftOne16RightRefreshView", "endRefresh"]
-- !private ["C8SwiftOne16RightRefreshView", "frame"]
 - ["C8SwiftOne16RightRefreshView", "init"]
 - !private ["C8SwiftOne16RightRefreshView", "reloadItemIndex"]
-- !private ["Ps12SequenceType", "Element"]
+- !private ["C8SwiftOne16RightRefreshView", "setupViews"]
 - !private ["Ps12SequenceType", "Generator"]
 - !private ["Ps12SequenceType", "Index"]
 - !private ["Ps12SequenceType", "SubSequence"]
-- !private ["Ps12SequenceType", "_Element"]
 - !private ["Ps12SequenceType", "allKeys"]
 - !private ["Ps12SequenceType", "count"]
 - ["Ps12SequenceType", "init"]
@@ -868,10 +851,6 @@ depends-member:
 - !private ["Ps16SignedNumberType", "Distance"]
 - !private ["Ps16SignedNumberType", "IntegerLiteralType"]
 - ["Ps16SignedNumberType", "init"]
-- !private ["Vs5Slice", "Generator"]
-- !private ["Vs5Slice", "Index"]
-- !private ["Vs5Slice", "SubSequence"]
-- !private ["Vs5Slice", "_Element"]
 - !private ["Ps10Streamable", "init"]
 - !private ["Ps10Strideable", "Distance"]
 - !private ["Ps10Strideable", "IntegerLiteralType"]
@@ -890,7 +869,7 @@ depends-member:
 - ["PSo29UIAccessibilityIdentification", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "refreshSubviewsForNewItem"]
 - !private ["PSo29UIAccessibilityIdentification", "reloadItemIndex"]
-- !private ["PSo29UIAccessibilityIdentification", "subviews"]
+- !private ["PSo29UIAccessibilityIdentification", "setupViews"]
 - !private ["PSo12UIAppearance", "addSubview"]
 - !private ["PSo12UIAppearance", "bounds"]
 - !private ["PSo12UIAppearance", "configureViewWithHomeEntity"]
@@ -901,10 +880,9 @@ depends-member:
 - ["PSo12UIAppearance", "init"]
 - !private ["PSo12UIAppearance", "refreshSubviewsForNewItem"]
 - !private ["PSo12UIAppearance", "reloadItemIndex"]
-- !private ["PSo12UIAppearance", "subviews"]
+- !private ["PSo12UIAppearance", "setupViews"]
 - ["PSo21UIAppearanceContainer", "Bool"]
 - !private ["PSo21UIAppearanceContainer", "CGRectGetHeight"]
-- !private ["PSo21UIAppearanceContainer", "CGRectGetWidth"]
 - !private ["PSo21UIAppearanceContainer", "CGRectMake"]
 - !private ["PSo21UIAppearanceContainer", "HomeModel"]
 - !private ["PSo21UIAppearanceContainer", "HomeView"]
@@ -914,6 +892,7 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "RightRefreshView"]
 - !private ["PSo21UIAppearanceContainer", "SetNavigationBarShowRightBarButtonItem"]
 - !private ["PSo21UIAppearanceContainer", "UIScreen"]
+- !private ["PSo21UIAppearanceContainer", "UIView"]
 - !private ["PSo21UIAppearanceContainer", "addSubview"]
 - !private ["PSo21UIAppearanceContainer", "bounds"]
 - !private ["PSo21UIAppearanceContainer", "configureViewWithHomeEntity"]
@@ -940,8 +919,8 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "rightPullRefreshViewDidScrollToLastItem"]
 - ["PSo21UIAppearanceContainer", "rightPullRefreshViewRefrshing"]
 - ["PSo21UIAppearanceContainer", "rightPullToReshView"]
+- !private ["PSo21UIAppearanceContainer", "setupViews"]
 - ["PSo21UIAppearanceContainer", "share"]
-- !private ["PSo21UIAppearanceContainer", "subviews"]
 - !private ["PSo21UIAppearanceContainer", "tabBar"]
 - !private ["PSo21UIAppearanceContainer", "tabBarController"]
 - !private ["PSo21UIAppearanceContainer", "view"]
@@ -949,7 +928,6 @@ depends-member:
 - ["PSo21UIAppearanceContainer", ""]
 - ["PSo18UIContentContainer", "Bool"]
 - !private ["PSo18UIContentContainer", "CGRectGetHeight"]
-- !private ["PSo18UIContentContainer", "CGRectGetWidth"]
 - !private ["PSo18UIContentContainer", "CGRectMake"]
 - !private ["PSo18UIContentContainer", "HomeModel"]
 - !private ["PSo18UIContentContainer", "HomeView"]
@@ -959,6 +937,7 @@ depends-member:
 - ["PSo18UIContentContainer", "RightRefreshView"]
 - !private ["PSo18UIContentContainer", "SetNavigationBarShowRightBarButtonItem"]
 - !private ["PSo18UIContentContainer", "UIScreen"]
+- !private ["PSo18UIContentContainer", "UIView"]
 - ["PSo18UIContentContainer", "endRefreshing"]
 - ["PSo18UIContentContainer", "endRequestHomeContent"]
 - ["PSo18UIContentContainer", "init"]
@@ -992,7 +971,7 @@ depends-member:
 - ["PSo17UICoordinateSpace", "init"]
 - !private ["PSo17UICoordinateSpace", "refreshSubviewsForNewItem"]
 - !private ["PSo17UICoordinateSpace", "reloadItemIndex"]
-- !private ["PSo17UICoordinateSpace", "subviews"]
+- !private ["PSo17UICoordinateSpace", "setupViews"]
 - !private ["PSo13UIDynamicItem", "addSubview"]
 - !private ["PSo13UIDynamicItem", "bounds"]
 - !private ["PSo13UIDynamicItem", "configureViewWithHomeEntity"]
@@ -1003,10 +982,9 @@ depends-member:
 - ["PSo13UIDynamicItem", "init"]
 - !private ["PSo13UIDynamicItem", "refreshSubviewsForNewItem"]
 - !private ["PSo13UIDynamicItem", "reloadItemIndex"]
-- !private ["PSo13UIDynamicItem", "subviews"]
+- !private ["PSo13UIDynamicItem", "setupViews"]
 - ["PSo18UIFocusEnvironment", "Bool"]
 - !private ["PSo18UIFocusEnvironment", "CGRectGetHeight"]
-- !private ["PSo18UIFocusEnvironment", "CGRectGetWidth"]
 - !private ["PSo18UIFocusEnvironment", "CGRectMake"]
 - !private ["PSo18UIFocusEnvironment", "HomeModel"]
 - !private ["PSo18UIFocusEnvironment", "HomeView"]
@@ -1016,6 +994,7 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "RightRefreshView"]
 - !private ["PSo18UIFocusEnvironment", "SetNavigationBarShowRightBarButtonItem"]
 - !private ["PSo18UIFocusEnvironment", "UIScreen"]
+- !private ["PSo18UIFocusEnvironment", "UIView"]
 - !private ["PSo18UIFocusEnvironment", "addSubview"]
 - !private ["PSo18UIFocusEnvironment", "bounds"]
 - !private ["PSo18UIFocusEnvironment", "configureViewWithHomeEntity"]
@@ -1042,8 +1021,8 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "rightPullRefreshViewDidScrollToLastItem"]
 - ["PSo18UIFocusEnvironment", "rightPullRefreshViewRefrshing"]
 - ["PSo18UIFocusEnvironment", "rightPullToReshView"]
+- !private ["PSo18UIFocusEnvironment", "setupViews"]
 - ["PSo18UIFocusEnvironment", "share"]
-- !private ["PSo18UIFocusEnvironment", "subviews"]
 - !private ["PSo18UIFocusEnvironment", "tabBar"]
 - !private ["PSo18UIFocusEnvironment", "tabBarController"]
 - !private ["PSo18UIFocusEnvironment", "view"]
@@ -1052,7 +1031,6 @@ depends-member:
 - !private ["CSo11UIResponder", "AnyObject"]
 - ["CSo11UIResponder", "Bool"]
 - !private ["CSo11UIResponder", "CGRectGetHeight"]
-- !private ["CSo11UIResponder", "CGRectGetWidth"]
 - !private ["CSo11UIResponder", "CGRectMake"]
 - ["CSo11UIResponder", "HomeModel"]
 - !private ["CSo11UIResponder", "HomeView"]
@@ -1071,6 +1049,7 @@ depends-member:
 - !private ["CSo11UIResponder", "bounds"]
 - !private ["CSo11UIResponder", "configureViewWithHomeEntity"]
 - !private ["CSo11UIResponder", "dataSource"]
+- !private ["CSo11UIResponder", "deinit"]
 - !private ["CSo11UIResponder", "delegate"]
 - !private ["CSo11UIResponder", "endRefresh"]
 - ["CSo11UIResponder", "endRefreshing"]
@@ -1093,8 +1072,8 @@ depends-member:
 - ["CSo11UIResponder", "rightPullRefreshViewDidScrollToLastItem"]
 - ["CSo11UIResponder", "rightPullRefreshViewRefrshing"]
 - ["CSo11UIResponder", "rightPullToReshView"]
+- !private ["CSo11UIResponder", "setupViews"]
 - ["CSo11UIResponder", "share"]
-- !private ["CSo11UIResponder", "subviews"]
 - !private ["CSo11UIResponder", "tabBar"]
 - !private ["CSo11UIResponder", "tabBarController"]
 - !private ["CSo11UIResponder", "view"]
@@ -1103,7 +1082,6 @@ depends-member:
 - !private ["CSo8UIScreen", "mainScreen"]
 - ["PSo16UIStateRestoring", "Bool"]
 - !private ["PSo16UIStateRestoring", "CGRectGetHeight"]
-- !private ["PSo16UIStateRestoring", "CGRectGetWidth"]
 - !private ["PSo16UIStateRestoring", "CGRectMake"]
 - !private ["PSo16UIStateRestoring", "HomeModel"]
 - !private ["PSo16UIStateRestoring", "HomeView"]
@@ -1113,6 +1091,7 @@ depends-member:
 - ["PSo16UIStateRestoring", "RightRefreshView"]
 - !private ["PSo16UIStateRestoring", "SetNavigationBarShowRightBarButtonItem"]
 - !private ["PSo16UIStateRestoring", "UIScreen"]
+- !private ["PSo16UIStateRestoring", "UIView"]
 - ["PSo16UIStateRestoring", "endRefreshing"]
 - ["PSo16UIStateRestoring", "endRequestHomeContent"]
 - ["PSo16UIStateRestoring", "init"]
@@ -1141,7 +1120,6 @@ depends-member:
 - !private ["PSo16UITabBarDelegate", "tabBar"]
 - ["PSo18UITraitEnvironment", "Bool"]
 - !private ["PSo18UITraitEnvironment", "CGRectGetHeight"]
-- !private ["PSo18UITraitEnvironment", "CGRectGetWidth"]
 - !private ["PSo18UITraitEnvironment", "CGRectMake"]
 - !private ["PSo18UITraitEnvironment", "HomeModel"]
 - !private ["PSo18UITraitEnvironment", "HomeView"]
@@ -1151,6 +1129,7 @@ depends-member:
 - ["PSo18UITraitEnvironment", "RightRefreshView"]
 - !private ["PSo18UITraitEnvironment", "SetNavigationBarShowRightBarButtonItem"]
 - !private ["PSo18UITraitEnvironment", "UIScreen"]
+- !private ["PSo18UITraitEnvironment", "UIView"]
 - !private ["PSo18UITraitEnvironment", "addSubview"]
 - !private ["PSo18UITraitEnvironment", "bounds"]
 - !private ["PSo18UITraitEnvironment", "configureViewWithHomeEntity"]
@@ -1178,8 +1157,8 @@ depends-member:
 - ["PSo18UITraitEnvironment", "rightPullRefreshViewDidScrollToLastItem"]
 - ["PSo18UITraitEnvironment", "rightPullRefreshViewRefrshing"]
 - ["PSo18UITraitEnvironment", "rightPullToReshView"]
+- !private ["PSo18UITraitEnvironment", "setupViews"]
 - ["PSo18UITraitEnvironment", "share"]
-- !private ["PSo18UITraitEnvironment", "subviews"]
 - !private ["PSo18UITraitEnvironment", "tabBar"]
 - !private ["PSo18UITraitEnvironment", "tabBarController"]
 - !private ["PSo18UITraitEnvironment", "view"]
@@ -1189,17 +1168,17 @@ depends-member:
 - !private ["CSo6UIView", "bounds"]
 - !private ["CSo6UIView", "configureViewWithHomeEntity"]
 - !private ["CSo6UIView", "dataSource"]
+- !private ["CSo6UIView", "deinit"]
 - !private ["CSo6UIView", "delegate"]
 - !private ["CSo6UIView", "endRefresh"]
 - !private ["CSo6UIView", "frame"]
 - ["CSo6UIView", "init"]
 - !private ["CSo6UIView", "refreshSubviewsForNewItem"]
 - !private ["CSo6UIView", "reloadItemIndex"]
-- !private ["CSo6UIView", "subviews"]
+- !private ["CSo6UIView", "setupViews"]
 - !private ["CSo16UIViewController", "AnyObject"]
 - ["CSo16UIViewController", "Bool"]
 - !private ["CSo16UIViewController", "CGRectGetHeight"]
-- !private ["CSo16UIViewController", "CGRectGetWidth"]
 - !private ["CSo16UIViewController", "CGRectMake"]
 - ["CSo16UIViewController", "HomeModel"]
 - !private ["CSo16UIViewController", "HomeView"]
@@ -1247,7 +1226,6 @@ depends-member:
 - !private ["C8SwiftOne14ViewController", "AnyObject"]
 - ["C8SwiftOne14ViewController", "Bool"]
 - !private ["C8SwiftOne14ViewController", "CGRectGetHeight"]
-- !private ["C8SwiftOne14ViewController", "CGRectGetWidth"]
 - !private ["C8SwiftOne14ViewController", "CGRectMake"]
 - ["C8SwiftOne14ViewController", "HomeModel"]
 - !private ["C8SwiftOne14ViewController", "HomeView"]
@@ -1288,7 +1266,6 @@ depends-member:
 - !private ["Ps10_ArrayType", "Index"]
 - !private ["Ps10_ArrayType", "SubSequence"]
 - !private ["Ps10_ArrayType", "count"]
-- !private ["Ps10_ArrayType", "subscript"]
 - !private ["Ps33_BuiltinBooleanLiteralConvertible", "_getBuiltinLogicValue"]
 - ["Ps33_BuiltinBooleanLiteralConvertible", "init"]
 - !private ["Ps49_BuiltinExtendedGraphemeClusterLiteralConvertible", "init"]
@@ -1302,7 +1279,6 @@ depends-member:
 - !private ["Ps24_DestructorSafeContainer", "Index"]
 - !private ["Ps24_DestructorSafeContainer", "SubSequence"]
 - !private ["Ps24_DestructorSafeContainer", "count"]
-- !private ["Ps24_DestructorSafeContainer", "subscript"]
 - !private ["Ps14_Incrementable", "Distance"]
 - !private ["Ps14_Incrementable", "IntegerLiteralType"]
 - ["Ps14_Incrementable", "init"]
@@ -1320,7 +1296,6 @@ depends-member:
 - !private ["Ps21_ObjectiveCBridgeable", "_getBuiltinLogicValue"]
 - !private ["Ps21_ObjectiveCBridgeable", "count"]
 - ["Ps21_ObjectiveCBridgeable", "init"]
-- !private ["Ps21_ObjectiveCBridgeable", "subscript"]
 - !private ["Vs26_OptionalNilComparisonType", "deinit"]
 - !private ["Ps22_RandomAccessAmbiguity", "Distance"]
 - !private ["Ps22_RandomAccessAmbiguity", "IntegerLiteralType"]
@@ -1346,16 +1321,15 @@ depends-member:
 - !private ["Ps12_Reflectable", "reloadItemIndex"]
 - !private ["Ps12_Reflectable", "removeAllObjects"]
 - !private ["Ps12_Reflectable", "setObject"]
+- !private ["Ps12_Reflectable", "setupViews"]
 - !private ["Ps12_Reflectable", "size"]
 - !private ["Ps12_Reflectable", "subscript"]
-- !private ["Ps12_Reflectable", "subviews"]
 - !private ["Ps12_Reflectable", "width"]
 - !private ["Ps18_SignedIntegerType", "Distance"]
 - !private ["Ps18_SignedIntegerType", "IntegerLiteralType"]
 - ["Ps18_SignedIntegerType", "init"]
 - ["PSo19iCarouselDataSource", "Bool"]
 - !private ["PSo19iCarouselDataSource", "CGRectGetHeight"]
-- !private ["PSo19iCarouselDataSource", "CGRectGetWidth"]
 - !private ["PSo19iCarouselDataSource", "CGRectMake"]
 - !private ["PSo19iCarouselDataSource", "HomeModel"]
 - !private ["PSo19iCarouselDataSource", "HomeView"]
@@ -1365,12 +1339,12 @@ depends-member:
 - ["PSo19iCarouselDataSource", "RightRefreshView"]
 - !private ["PSo19iCarouselDataSource", "SetNavigationBarShowRightBarButtonItem"]
 - !private ["PSo19iCarouselDataSource", "UIScreen"]
+- !private ["PSo19iCarouselDataSource", "UIView"]
 - !private ["PSo19iCarouselDataSource", "dataSource"]
 - !private ["PSo19iCarouselDataSource", "delegate"]
 - !private ["PSo19iCarouselDataSource", "endRefresh"]
 - ["PSo19iCarouselDataSource", "endRefreshing"]
 - ["PSo19iCarouselDataSource", "endRequestHomeContent"]
-- !private ["PSo19iCarouselDataSource", "frame"]
 - ["PSo19iCarouselDataSource", "init"]
 - ["PSo19iCarouselDataSource", "isRefreshing"]
 - ["PSo19iCarouselDataSource", "lastConfigureViewForItemIndex"]
@@ -1387,6 +1361,7 @@ depends-member:
 - ["PSo19iCarouselDataSource", "rightPullRefreshViewDidScrollToLastItem"]
 - ["PSo19iCarouselDataSource", "rightPullRefreshViewRefrshing"]
 - ["PSo19iCarouselDataSource", "rightPullToReshView"]
+- !private ["PSo19iCarouselDataSource", "setupViews"]
 - ["PSo19iCarouselDataSource", "share"]
 - !private ["PSo19iCarouselDataSource", "tabBarController"]
 - !private ["PSo19iCarouselDataSource", "view"]
@@ -1394,7 +1369,6 @@ depends-member:
 - ["PSo19iCarouselDataSource", ""]
 - ["PSo17iCarouselDelegate", "Bool"]
 - !private ["PSo17iCarouselDelegate", "CGRectGetHeight"]
-- !private ["PSo17iCarouselDelegate", "CGRectGetWidth"]
 - !private ["PSo17iCarouselDelegate", "CGRectMake"]
 - !private ["PSo17iCarouselDelegate", "HomeModel"]
 - !private ["PSo17iCarouselDelegate", "HomeView"]
@@ -1404,12 +1378,12 @@ depends-member:
 - ["PSo17iCarouselDelegate", "RightRefreshView"]
 - !private ["PSo17iCarouselDelegate", "SetNavigationBarShowRightBarButtonItem"]
 - !private ["PSo17iCarouselDelegate", "UIScreen"]
+- !private ["PSo17iCarouselDelegate", "UIView"]
 - !private ["PSo17iCarouselDelegate", "dataSource"]
 - !private ["PSo17iCarouselDelegate", "delegate"]
 - !private ["PSo17iCarouselDelegate", "endRefresh"]
 - ["PSo17iCarouselDelegate", "endRefreshing"]
 - ["PSo17iCarouselDelegate", "endRequestHomeContent"]
-- !private ["PSo17iCarouselDelegate", "frame"]
 - ["PSo17iCarouselDelegate", "init"]
 - ["PSo17iCarouselDelegate", "isRefreshing"]
 - ["PSo17iCarouselDelegate", "lastConfigureViewForItemIndex"]
@@ -1426,6 +1400,7 @@ depends-member:
 - ["PSo17iCarouselDelegate", "rightPullRefreshViewDidScrollToLastItem"]
 - ["PSo17iCarouselDelegate", "rightPullRefreshViewRefrshing"]
 - ["PSo17iCarouselDelegate", "rightPullToReshView"]
+- !private ["PSo17iCarouselDelegate", "setupViews"]
 - ["PSo17iCarouselDelegate", "share"]
 - !private ["PSo17iCarouselDelegate", "tabBarController"]
 - !private ["PSo17iCarouselDelegate", "view"]
@@ -1433,7 +1408,6 @@ depends-member:
 - ["PSo17iCarouselDelegate", ""]
 - ["P8SwiftOne23praiseNumberBtnDelegate", "Bool"]
 - !private ["P8SwiftOne23praiseNumberBtnDelegate", "CGRectGetHeight"]
-- !private ["P8SwiftOne23praiseNumberBtnDelegate", "CGRectGetWidth"]
 - !private ["P8SwiftOne23praiseNumberBtnDelegate", "CGRectMake"]
 - !private ["P8SwiftOne23praiseNumberBtnDelegate", "HomeModel"]
 - !private ["P8SwiftOne23praiseNumberBtnDelegate", "HomeView"]
@@ -1443,6 +1417,7 @@ depends-member:
 - ["P8SwiftOne23praiseNumberBtnDelegate", "RightRefreshView"]
 - !private ["P8SwiftOne23praiseNumberBtnDelegate", "SetNavigationBarShowRightBarButtonItem"]
 - !private ["P8SwiftOne23praiseNumberBtnDelegate", "UIScreen"]
+- !private ["P8SwiftOne23praiseNumberBtnDelegate", "UIView"]
 - !private ["P8SwiftOne23praiseNumberBtnDelegate", "endRefreshing"]
 - !private ["P8SwiftOne23praiseNumberBtnDelegate", "endRequestHomeContent"]
 - !private ["P8SwiftOne23praiseNumberBtnDelegate", "isRefreshing"]
@@ -1487,14 +1462,12 @@ depends-nominal:
 - !private "Ps41ExtendedGraphemeClusterLiteralConvertible"
 - !private "Sf"
 - "Ps16ForwardIndexType"
-- !private "Ps13GeneratorType"
 - "Ps8Hashable"
 - !private "C8SwiftOne9HomeModel"
 - !private "C8SwiftOne8HomeView"
 - "C8SwiftOne18HomeViewController"
 - !private "SQ"
 - !private "Ps9Indexable"
-- !private "Vs17IndexingGenerator"
 - "Si"
 - !private "Vs5Int16"
 - !private "Vs5Int32"
@@ -1530,7 +1503,6 @@ depends-nominal:
 - "Ps12SequenceType"
 - "Ps17SignedIntegerType"
 - "Ps16SignedNumberType"
-- !private "Vs5Slice"
 - !private "Ps10Streamable"
 - "Ps10Strideable"
 - !private "SS"

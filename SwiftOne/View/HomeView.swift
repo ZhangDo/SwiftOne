@@ -87,7 +87,7 @@ class HomeView: UIView {
            paintImageView.image = UIImage.init(named: "矢量智能对象")
             paintWidth = UIScreen.mainScreen().bounds.size.width - 20.0
             paintHeight = paintWidth! * 0.75
-            print("shiduoshao\(self.frame.size.width)")
+//            print("shiduoshao\(self.frame.size.width)")
             paintImageView.snp_makeConstraints(closure: { (make) in
                 make.top.equalTo(volLabel.snp_bottom).offset(10)
                 make.left.equalTo(constainerView.snp_left).offset(10)

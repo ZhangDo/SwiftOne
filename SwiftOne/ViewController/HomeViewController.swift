@@ -25,11 +25,13 @@ class HomeViewController: ViewController, RightPullToRefreshViewDataSource,Right
         numberItems = 1
         lastConfigureViewForItemIndex = 0
         isRefreshing = false
-        
+        print(numberItems)
         rightPullToReshView = RightRefreshView.init(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height - 64 - CGRectGetHeight(self.tabBarController!.tabBar.frame)))
-        self.view.addSubview(rightPullToReshView)
         rightPullToReshView.delegate = self;
         rightPullToReshView.dataSource = self;
+        rightPullToReshView.setupViews()
+        self.view.addSubview(rightPullToReshView)
+        
         
         self.requestHomeContentAtIndex(0)
 //        let homeView = HomeView()
@@ -83,22 +85,26 @@ class HomeViewController: ViewController, RightPullToRefreshViewDataSource,Right
 
      func rightPullRefreshView(rightPullRefreshView: RightRefreshView, ViewForitemAtIndex: NSInteger, resuingView: UIView?) -> UIView {
 //        return UIView()
-        let width = CGRectGetWidth(rightPullRefreshView.frame)
-        let height = CGRectGetHeight(rightPullRefreshView.frame)
-        let view = resuingView
+//        let width = CGRectGetWidth(rightPullRefreshView.frame)
+//        let height = CGRectGetHeight(rightPullRefreshView.frame)
+        
+//        let view = resuingView
         
         
         var homeView = HomeView()
+        
         if view == nil {
-            view?.frame = CGRectMake(0, 0, width, height)
-            homeView = HomeView.init(frame: (view?.bounds)!)
+            view = UIView.init(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height - 64 - CGRectGetHeight(self.tabBarController!.tabBar.frame)))
+//            view?.frame = CGRectMake(0, 0, width, height)
+            homeView = HomeView.init(frame:view.bounds)
             view?.addSubview(homeView)
             
-        }else {
-            homeView = (view?.subviews[0] as? HomeView)!
-            
         }
-        
+//        else {
+//            homeView = (view?.subviews[0] as! HomeView)
+//            
+//        }
+//        
         //没有展示过的
         if ViewForitemAtIndex == numberItems - 1 || ViewForitemAtIndex == readItems.allKeys.count{
             homeView.refreshSubviewsForNewItem()
