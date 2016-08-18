@@ -24,8 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
         
         
-        
-        
         return true
     }
     //设置TabBar

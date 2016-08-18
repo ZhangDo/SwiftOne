@@ -41,14 +41,12 @@ class NetworkTool: NSObject {
             
         }else {
             let index1 = index + 1
-            
             let date = ZDBaseFunction.stringDateFromCurrent()
             let parameters = ["strDate":date,"strRow":"\(index1)"]
 
             return parameters
         
         }
-    
     
     }
     

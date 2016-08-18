@@ -133,7 +133,7 @@ extension NSObject{
                     }
                 }else if self.zz_getType(v) == .Dictionary{
                     if let dic1 = v as? [String : AnyObject]{
-                        if self.respondsToSelector("zz_modelPropertyClass"){
+                        if self.respondsToSelector(#selector(NSObject.zz_modelPropertyClass)){
                             if let properties = self.zz_modelPropertyClass(){
                                 if  self.valueForKey(k) == nil{
                                     //初始化

@@ -1,20 +1,20 @@
 version: "Apple Swift version 2.2 (swiftlang-703.0.18.8 clang-703.0.31)"
-options: "4cbb6e1c71bcc72cd8dc2ed4da0db239"
-build_time: [524542334, 697645000]
+options: "3608945ff0a61ad5bbecd544b3080148"
+build_time: [524824149, 161008000]
 inputs:
   "/Users/chenmengjia/Documents/SwiftOne/SwiftOne/ViewController/ProfileViewController.swift": [524329775, 0]
   "/Users/chenmengjia/Documents/SwiftOne/SwiftOne/ViewController.swift": [523969081, 0]
   "/Users/chenmengjia/Documents/SwiftOne/SwiftOne/Model/NSObject+ZDModel.swift": [524297557, 0]
-  "/Users/chenmengjia/Documents/SwiftOne/SwiftOne/Model/ZDContent.swift": [524297093, 0]
+  "/Users/chenmengjia/Documents/SwiftOne/SwiftOne/Model/ZDContent.swift": [524572370, 0]
   "/Users/chenmengjia/Documents/SwiftOne/SwiftOne/ViewController/QuestionViewController.swift": [524329775, 0]
   "/Users/chenmengjia/Documents/SwiftOne/SwiftOne/AppDelegate.swift": [523969081, 0]
-  "/Users/chenmengjia/Documents/SwiftOne/SwiftOne/Utilites/NetworkTool.swift": [524299070, 0]
+  "/Users/chenmengjia/Documents/SwiftOne/SwiftOne/Utilites/NetworkTool.swift": [524572370, 0]
   "/Users/chenmengjia/Documents/SwiftOne/SwiftOne/ViewController/ReadViewController.swift": [524329775, 0]
   "/Users/chenmengjia/Documents/SwiftOne/SwiftOne/View/HomeView.swift": [524330992, 0]
-  "/Users/chenmengjia/Documents/SwiftOne/SwiftOne/Utilites/ZDBaseFunction.swift": [524299070, 0]
-  "/Users/chenmengjia/Documents/SwiftOne/SwiftOne/View/RightRefreshView.swift": [524332877, 0]
+  "/Users/chenmengjia/Documents/SwiftOne/SwiftOne/Utilites/ZDBaseFunction.swift": [524572370, 0]
+  "/Users/chenmengjia/Documents/SwiftOne/SwiftOne/View/RightRefreshView.swift": [524572370, 0]
   "/Users/chenmengjia/Documents/SwiftOne/SwiftOne/Utilites/NetworkResponse.swift": [524220885, 0]
   "/Users/chenmengjia/Documents/SwiftOne/SwiftOne/ViewController/ThingsViewController.swift": [524329775, 0]
-  "/Users/chenmengjia/Documents/SwiftOne/SwiftOne/Utilites/Urls.swift": [524216617, 0]
+  "/Users/chenmengjia/Documents/SwiftOne/SwiftOne/Utilites/Urls.swift": [524572370, 0]
   "/Users/chenmengjia/Documents/SwiftOne/SwiftOne/Model/HomeModel.swift": [524297093, 0]
   "/Users/chenmengjia/Documents/SwiftOne/SwiftOne/ViewController/HomeViewController.swift": [524332483, 0]

@@ -6,24 +6,24 @@ provides-nominal:
 provides-member:
 - ["C8SwiftOne9HomeModel", ""]
 provides-dynamic-lookup:
-- "strContent"
-- "strLastUpdateDate"
-- "strThumbnailUrl"
-- "description"
-- "strAuthor"
 - "strDayDiffer"
-- "strHpTitle"
-- "strPn"
-- "sWebLk"
-- "strMarketTime"
+- "strContent"
 - "wImgUrl"
-- "strHpId"
+- "strHpTitle"
+- "strAuthor"
+- "strLastUpdateDate"
+- "description"
+- "sWebLk"
 - "strOriginalImgUrl"
+- "strHpId"
+- "strMarketTime"
+- "strPn"
+- "strThumbnailUrl"
 depends-top-level:
 - "HomeModel"
 - "String"
-- "NSObject"
 - !private "StringLiteralType"
+- "NSObject"
 depends-member:
 - ["Ps9AnyObject", "description"]
 - ["Ps9AnyObject", "init"]

@@ -6,22 +6,22 @@ provides-nominal:
 provides-member:
 - ["C8SwiftOne9ZDContent", ""]
 provides-dynamic-lookup:
-- "strLastUpdateDate"
-- "strThumbnailUrl"
+- "strHpId"
+- "strAuthor"
+- "sWebLk"
+- "strHpTitle"
 - "strContent"
 - "strPn"
-- "strDayDiffer"
-- "strAuthor"
-- "strHpTitle"
-- "strHpId"
-- "sWebLk"
-- "strOriginalImgUrl"
-- "strMarketTime"
 - "wImgUrl"
+- "strMarketTime"
+- "strThumbnailUrl"
+- "strDayDiffer"
+- "strLastUpdateDate"
+- "strOriginalImgUrl"
 depends-top-level:
+- "ZDContent"
 - "NSObject"
 - "String"
-- "ZDContent"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "sWebLk"]
