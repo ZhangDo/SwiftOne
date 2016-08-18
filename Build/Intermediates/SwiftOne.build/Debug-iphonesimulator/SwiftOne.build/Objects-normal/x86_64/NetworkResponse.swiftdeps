@@ -8,11 +8,11 @@ provides-member:
 provides-dynamic-lookup:
 - "result"
 depends-top-level:
-- "String"
-- "NetworkResponse"
-- "AnyObject"
 - !private "StringLiteralType"
+- "String"
+- "AnyObject"
 - "NSObject"
+- "NetworkResponse"
 depends-member:
 - ["Ps9AnyObject", "init"]
 - ["Ps9AnyObject", "result"]

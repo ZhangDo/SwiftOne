@@ -8,12 +8,12 @@ provides-nominal:
 provides-member:
 provides-dynamic-lookup:
 depends-top-level:
-- "+"
-- "kAPI_URL_GET_QUESTIONS_CONTENT"
-- "kAPI_URL_GET_HOME_CONTENT"
-- "kAPI_URL_GET_READING_CONTENT"
 - "kAPI_URL"
+- "kAPI_URL_GET_QUESTIONS_CONTENT"
+- "kAPI_URL_GET_READING_CONTENT"
+- "+"
 - "StringLiteralType"
+- "kAPI_URL_GET_HOME_CONTENT"
 depends-member:
 depends-nominal:
 depends-dynamic-lookup:

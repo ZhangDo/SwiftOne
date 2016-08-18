@@ -14,43 +14,43 @@ provides-member:
 - ["CSo8NSObject", "zz_getVariableWithClass"]
 - ["CSo8NSNumber", "zz_isBool"]
 provides-dynamic-lookup:
+- "zz_modelPropertyClass"
+- "zz_dicToModel"
 - "setDicValue"
 - "zz_getVariableWithClass"
-- "zz_modelPropertyClass"
 - "zz_isBool"
-- "zz_dicToModel"
 - "zz_objToModel"
 depends-top-level:
-- "AnyClass"
-- "zz_falseNumber"
-- "StringLiteralType"
-- !private "UInt32"
+- "zz_trueNumber"
+- "Bool"
+- !private "!"
+- "BooleanLiteralType"
 - !private "zz_falseObjCType"
 - !private "dispatch_async"
+- !private "NSNull"
+- !private "ivar_getName"
+- "zz_falseNumber"
+- !private "UInt32"
 - !private "..<"
 - "AnyObject"
-- !private "ivar_getName"
-- !private "NSComparisonResult"
-- !private "&&"
-- !private "!"
-- "zz_trueNumber"
-- "String"
-- "Int"
-- !private "free"
-- "DISPATCH_QUEUE_SERIAL"
-- "Bool"
-- !private "zz_trueObjCType"
+- "zz_type"
 - "=="
 - !private "~="
-- "BooleanLiteralType"
-- !private "NSNull"
-- "dispatch_queue_create"
-- !private "zz_queue"
+- "DISPATCH_QUEUE_SERIAL"
+- "AnyClass"
 - "NSObject"
-- "zz_type"
-- !private "class_copyIvarList"
-- !private "||"
+- "dispatch_queue_create"
 - "NSNumber"
+- !private "class_copyIvarList"
+- !private "zz_trueObjCType"
+- !private "&&"
+- !private "||"
+- !private "zz_queue"
+- !private "NSComparisonResult"
+- "Int"
+- !private "free"
+- "StringLiteralType"
+- "String"
 depends-member:
 - !private ["Ps9AnyObject", "Int"]
 - !private ["Ps9AnyObject", "NSComparisonResult"]
@@ -604,7 +604,6 @@ depends-member:
 - ["Ps16RawRepresentable", "init"]
 - ["Ps16RawRepresentable", "rawValue"]
 - ["Ps16RawRepresentable", ""]
-- !private ["V10ObjectiveC8Selector", "deinit"]
 - !private ["Ps12SequenceType", "Element"]
 - !private ["Ps12SequenceType", "Generator"]
 - !private ["Ps12SequenceType", "Index"]
@@ -798,7 +797,6 @@ depends-nominal:
 - !private "Vs14RangeGenerator"
 - !private "Ps30RangeReplaceableCollectionType"
 - "Ps16RawRepresentable"
-- !private "V10ObjectiveC8Selector"
 - !private "Ps12SequenceType"
 - !private "Ps17SignedIntegerType"
 - !private "Ps16SignedNumberType"

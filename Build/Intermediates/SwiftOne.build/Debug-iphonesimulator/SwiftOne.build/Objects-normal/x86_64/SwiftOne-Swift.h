@@ -261,6 +261,15 @@ SWIFT_CLASS("_TtC8SwiftOne22QuestionViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIWebView;
+
+SWIFT_CLASS("_TtC8SwiftOne8ReadView")
+@interface ReadView : UIView
+@property (nonatomic, strong) UIWebView * _Nonnull webView;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC8SwiftOne18ReadViewController")
 @interface ReadViewController : ViewController

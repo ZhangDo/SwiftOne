@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C74180AA1D5D92E10032C783 /* NSObject+ZDModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74180A91D5D92E10032C783 /* NSObject+ZDModel.swift */; };
 		C74180AC1D5D93650032C783 /* ZDContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74180AB1D5D93650032C783 /* ZDContent.swift */; };
+		C74181351D65EC450032C783 /* ReadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74181341D65EC450032C783 /* ReadView.swift */; };
 		C7D7D48D1D586F9B00D67B19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7D48C1D586F9B00D67B19 /* AppDelegate.swift */; };
 		C7D7D48F1D586F9B00D67B19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7D48E1D586F9B00D67B19 /* ViewController.swift */; };
 		C7D7D4941D586F9B00D67B19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D7D4931D586F9B00D67B19 /* Assets.xcassets */; };
@@ -54,6 +55,7 @@
 		6B23D0323BB16008204B3B74 /* Pods-SwiftOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftOne/Pods-SwiftOne.debug.xcconfig"; sourceTree = "<group>"; };
 		C74180A91D5D92E10032C783 /* NSObject+ZDModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+ZDModel.swift"; sourceTree = "<group>"; };
 		C74180AB1D5D93650032C783 /* ZDContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZDContent.swift; sourceTree = "<group>"; };
+		C74181341D65EC450032C783 /* ReadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadView.swift; sourceTree = "<group>"; };
 		C7D7D4891D586F9B00D67B19 /* SwiftOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D7D48C1D586F9B00D67B19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7D7D48E1D586F9B00D67B19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 			children = (
 				C7D7D4D41D589D3800D67B19 /* HomeView.swift */,
 				C7F1E5B61D5B86BF00AB717D /* RightRefreshView.swift */,
+				C74181341D65EC450032C783 /* ReadView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				C7D7D4CB1D5880A600D67B19 /* ThingsViewController.swift in Sources */,
 				C7F1E5BF1D5C613800AB717D /* Urls.swift in Sources */,
 				C7F1E5B91D5C32C400AB717D /* HomeModel.swift in Sources */,
+				C74181351D65EC450032C783 /* ReadView.swift in Sources */,
 				C7D7D4C71D58807D00D67B19 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

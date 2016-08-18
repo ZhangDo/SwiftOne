@@ -8,8 +8,8 @@ provides-member:
 provides-dynamic-lookup:
 - "viewDidLoad"
 depends-top-level:
-- "ViewController"
 - "ReadViewController"
+- "ViewController"
 - !private "BooleanLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "SetNavigationBarShowRightBarButtonItem"]

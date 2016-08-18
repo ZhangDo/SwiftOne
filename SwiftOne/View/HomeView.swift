@@ -25,7 +25,6 @@ class HomeView: UIView {
    private var contentTextView = UITextView()//
    private var praiseButton = UIButton()//点赞按钮
    private var indicatorView = UIActivityIndicatorView()//加载时的旋转菊花
-    
    private var paintWidth: CGFloat?
    private var paintHeight: CGFloat?
     
@@ -135,7 +134,6 @@ class HomeView: UIView {
             dayLabel.shadowOffset = CGSizeMake(1, 1)
             dayLabel.shadowColor = UIColor.whiteColor()
             constainerView.addSubview(dayLabel)
-            
             dayLabel.snp_makeConstraints(closure: { (make) in
                 make.top.equalTo(painAuthorLabel.snp_bottom).offset(20)
                 make.left.equalTo(constainerView.snp_left).offset(10)
@@ -153,7 +151,6 @@ class HomeView: UIView {
             monthAndYearLabel.shadowOffset = CGSizeMake(1, 1)
             monthAndYearLabel.shadowColor = UIColor.whiteColor()
             constainerView.addSubview(monthAndYearLabel)
-            
             monthAndYearLabel.snp_makeConstraints(closure: { (make) in
                 make.top.equalTo(dayLabel.snp_bottom).offset(2)
                 make.left.equalTo(constainerView.snp_left).offset(10)

@@ -6,25 +6,25 @@ provides-nominal:
 provides-member:
 - ["C8SwiftOne14ZDBaseFunction", ""]
 provides-dynamic-lookup:
-- "dateFromString"
 - "stringDateFromCurrent"
+- "dateFromString"
 - "stringDateBeforeTodaySeveralDays"
 - "homeENMarketTimeWithOriginalMarketTime"
 - "stringDateFromDate"
 depends-top-level:
 - "NSObject"
-- !private "String"
-- !private "!="
 - "NSString"
-- "NSDate"
-- !private "Double"
 - !private "NSDateFormatter"
+- !private "NSTimeZone"
 - "ZDBaseFunction"
-- !private "*"
 - !private "StringLiteralType"
 - !private "print"
+- !private "Double"
+- !private "*"
+- !private "!="
+- !private "String"
 - "Int"
-- !private "NSTimeZone"
+- "NSDate"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "init"]
 - !private ["Ps9AnyObject", "Double"]
