@@ -20,8 +20,6 @@ import Foundation
  NSString *sWebLk;
  NSString *strPn;
  NSString *wImgUrl;
- 
- 
  */
 class HomeModel: NSObject {
     var strLastUpdateDate: String?
