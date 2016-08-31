@@ -22,6 +22,10 @@ class ZDContent: NSObject {
     var strPn: String?
     var wImgUrl: String?
     
+    override var description: String {
+        return "strLastUpdateDate = \(strLastUpdateDate),strDayDiffer = \(strDayDiffer)"
     
+    
+    }
     
 }
