@@ -63,8 +63,7 @@ class HomeView: UIView {
                 make.width.equalTo(ScrollView)
             })
         }(constainerView))
-    
-        
+            
         ({(volLabel: UILabel) in
             volLabel.font = UIFont.systemFontOfSize(13)
             volLabel.textColor = UIColor.init(colorLiteralRed: 85.0/255.0, green: 85.0/255.0, blue: 85.0/255.0, alpha: 1.0)
