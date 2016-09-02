@@ -22,22 +22,22 @@ class HomeViewController: ViewController, RightPullToRefreshViewDataSource,Right
          super.viewDidLoad()
     
         SetNavigationBarShowRightBarButtonItem(true)
-        numberItems = 1
-        lastConfigureViewForItemIndex = 0
-        isRefreshing = false
-        print(numberItems)
-        rightPullToReshView = RightRefreshView.init(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height - 64 - CGRectGetHeight(self.tabBarController!.tabBar.frame)))
-        rightPullToReshView.delegate = self;
-        rightPullToReshView.dataSource = self;
-        rightPullToReshView.setupViews()
-        self.view.addSubview(rightPullToReshView)
-        
-        
-        self.requestHomeContentAtIndex(0)
-//        let homeView = HomeView()
-//        homeView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 64 - CGRectGetHeight((self.tabBarController?.tabBar.frame)!))
+//        numberItems = 1
+//        lastConfigureViewForItemIndex = 0
+//        isRefreshing = false
+//        print(numberItems)
+//        rightPullToReshView = RightRefreshView.init(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height - 64 - CGRectGetHeight(self.tabBarController!.tabBar.frame)))
+//        rightPullToReshView.delegate = self;
+//        rightPullToReshView.dataSource = self;
+//        rightPullToReshView.setupViews()
+//        self.view.addSubview(rightPullToReshView)
 //        
-//        self.view.addSubview(homeView)
+//        
+//        self.requestHomeContentAtIndex(0)
+        let homeView = HomeView()
+        homeView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 64 - CGRectGetHeight((self.tabBarController?.tabBar.frame)!))
+        
+        self.view.addSubview(homeView)
         
         
         

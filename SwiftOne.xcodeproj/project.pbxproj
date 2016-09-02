@@ -31,6 +31,7 @@
 		C7F1E5BF1D5C613800AB717D /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F1E5BE1D5C613800AB717D /* Urls.swift */; };
 		C7F1E5C11D5C69AF00AB717D /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F1E5C01D5C69AF00AB717D /* NetworkResponse.swift */; };
 		F2C57348417E542CC8451C60 /* Pods_SwiftOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C458A5FDA3C18FAB4753023 /* Pods_SwiftOne.framework */; };
+		F46FB9491D79309200D43CA1 /* ReadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46FB9481D79309200D43CA1 /* ReadModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		C7F1E5BE1D5C613800AB717D /* Urls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
 		C7F1E5C01D5C69AF00AB717D /* NetworkResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 		E26EF8629B8E9F0B4E605B95 /* Pods-SwiftOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftOne/Pods-SwiftOne.release.xcconfig"; sourceTree = "<group>"; };
+		F46FB9481D79309200D43CA1 /* ReadModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 				C74180A91D5D92E10032C783 /* NSObject+ZDModel.swift */,
 				C7F1E5B81D5C32C400AB717D /* HomeModel.swift */,
 				C74180AB1D5D93650032C783 /* ZDContent.swift */,
+				F46FB9481D79309200D43CA1 /* ReadModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				C7F1E5B71D5B86BF00AB717D /* RightRefreshView.swift in Sources */,
 				C7F1E5C11D5C69AF00AB717D /* NetworkResponse.swift in Sources */,
 				C7D7D4CB1D5880A600D67B19 /* ThingsViewController.swift in Sources */,
+				F46FB9491D79309200D43CA1 /* ReadModel.swift in Sources */,
 				C7F1E5BF1D5C613800AB717D /* Urls.swift in Sources */,
 				C7F1E5B91D5C32C400AB717D /* HomeModel.swift in Sources */,
 				C74181351D65EC450032C783 /* ReadView.swift in Sources */,

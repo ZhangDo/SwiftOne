@@ -17,6 +17,7 @@ class ViewController: UIViewController, iCarouselDataSource,iCarouselDelegate {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
         self.edgesForExtendedLayout = UIRectEdge.None//设置标题栏不能覆盖VC内容
+        
         // Do any additional setup after loading the view, typically from a nib.
 //        self.SetNavigationBarShowRightBarButtonItem(true)
     }
