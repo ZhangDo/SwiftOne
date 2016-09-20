@@ -23,7 +23,6 @@ class NetworkTool: NSObject {
                 successBlock(backMsg: respons.result.value!)
             case.Failure(let error):
                 failBlock(error: error)
-                print(error)
             }
         }
         

@@ -48,8 +48,9 @@ class HomeViewController: ViewController, RightPullToRefreshViewDataSource,Right
         homeRequest.requestHomeContentByIndex(index, successBlock: {
             (backMsg) in
 //
-//          /  var homeModel = HomeModel()
+//           var homeModel = HomeModel()
 //            homeModel = backMsg["hpEntity"]
+//            homeModel.Log("")
             
             let json = HomeModel.zz_dicToModel(backMsg["hpEntity"] as! [String : AnyObject]) as? HomeModel
             print("啦啦啦啦啦\(json!.strLastUpdateDate)")

@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         window = UIWindow()
@@ -34,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let homeNavigationVC = UINavigationController.init(rootViewController: homeVC)
         let homeTabBar = UITabBarItem.init(title: "首页", image: UIImage.init(named: "tabbar_item_home"), selectedImage: UIImage.init(named: "tabbar_item_home_selected"))
         homeNavigationVC.tabBarItem = homeTabBar
+        
         
         //文章
         let readVC = ReadViewController()

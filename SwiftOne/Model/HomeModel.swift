@@ -34,7 +34,17 @@ class HomeModel: NSObject {
     var sWebLk: String?
     var strPn: String?
     var wImgUrl: String?
+    private static let debug = true
     
+    class func Log(value: Any, fileName: String = #file, line: Int32 = #line) {
+        if debug {
+            print("\n\n====================Debug=====================")
+        }
+        print("文件名称: \((fileName as NSString).lastPathComponent) 代码行数: \(line)")
+        print("调试信息: \(value)\n=======================================")
+        
+        
+    }
     
     
   

@@ -12,6 +12,7 @@ import Kingfisher
 protocol praiseNumberBtnDelegate {
     func praiseBtn()
 }
+
 class HomeView: UIView {
    private var ScrollView = UIScrollView()
    private var constainerView = UIView()//容器视图
@@ -39,6 +40,7 @@ class HomeView: UIView {
     }
     
     func setupViews() {
+       
         
         ({(ScrollView: UIScrollView) in
             ScrollView.showsVerticalScrollIndicator = true//显示垂直滚动
@@ -215,7 +217,7 @@ class HomeView: UIView {
         
     }
     //加载菊花
-    
+   
     
     
     
