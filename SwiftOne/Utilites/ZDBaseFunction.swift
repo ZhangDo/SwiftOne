@@ -11,59 +11,59 @@ import UIKit
 class ZDBaseFunction: NSObject {
     
     
-  class func homeENMarketTimeWithOriginalMarketTime(originalMarketTime: NSString) -> NSString {
+  class func homeENMarketTimeWithOriginalMarketTime(_ originalMarketTime: NSString) -> NSString {
         let marketTime = self.dateFromString(originalMarketTime)
-        let dateformatter = NSDateFormatter()
+        let dateformatter = DateFormatter()
         dateformatter.dateFormat = "dd&MMM , yyyy"
-        let readingENMarketTime = dateformatter.stringFromDate(marketTime)
+        let readingENMarketTime = dateformatter.string(from: marketTime)
         
         
         
-      return readingENMarketTime
+      return readingENMarketTime as NSString
         
     }
     
-   class func dateFromString(dateStr:NSString) -> NSDate {
-        let inputFormatter = NSDateFormatter()
+   class func dateFromString(_ dateStr:NSString) -> Date {
+        let inputFormatter = DateFormatter()
         inputFormatter.dateFormat = "yyyy-MM-dd"
-        inputFormatter.timeZone = NSTimeZone.defaultTimeZone()
-        return inputFormatter.dateFromString(dateStr as String)!
+        inputFormatter.timeZone = TimeZone.current
+        return inputFormatter.date(from: dateStr as String)!
         
     }
-    class func stringDateBeforeTodaySeveralDays(days: Int) -> NSString {
+    class func stringDateBeforeTodaySeveralDays(_ days: Int) -> NSString {
         var stringdate = ""
-        let now = NSDate()
+        let now = Date()
         print("现在时间是：\(now)")
-        var theDate: NSDate?
+        var theDate: Date?
         if days != 0 {
-            theDate = NSDate.init(timeIntervalSinceNow: -24 * 60 * 60 * Double(days))
+            theDate = Date.init(timeIntervalSinceNow: -24 * 60 * 60 * Double(days))
             
         }else {
             theDate = now
         }
         
         stringdate = self.stringDateFromDate(theDate!) as String
-        return stringdate
+        return stringdate as NSString
     
     
     }
-   class func stringDateFromDate(date: NSDate) -> NSString {
-    let dateFormatter = NSDateFormatter()
+   class func stringDateFromDate(_ date: Date) -> NSString {
+    let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "yyyy-MM-dd"
-    let dateString = dateFormatter.stringFromDate(date)
+    let dateString = dateFormatter.string(from: date)
     
-    return dateString
+    return dateString as NSString
     
     }
     class func stringDateFromCurrent() -> NSString {
-        let currentDate = NSDate()
-        let dateformatter = NSDateFormatter()
+        let currentDate = Date()
+        let dateformatter = DateFormatter()
         
         dateformatter.dateFormat = "yyyy-MM-dd"
-        let currDateString = dateformatter.stringFromDate(currentDate)
+        let currDateString = dateformatter.string(from: currentDate)
         
          print("现在时间是：\(currDateString)")
-        return currDateString
+        return currDateString as NSString
     
     }
 

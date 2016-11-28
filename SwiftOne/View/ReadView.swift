@@ -11,8 +11,8 @@ import SnapKit
 class ReadView: UIView {
     
     var webView = UIWebView()
-    private var indicatorView = UIActivityIndicatorView()//加载时的旋转菊花
-    private var dateLabel = UILabel()//日期
+    fileprivate var indicatorView = UIActivityIndicatorView()//加载时的旋转菊花
+    fileprivate var dateLabel = UILabel()//日期
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -23,19 +23,19 @@ class ReadView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    private func setupViews() {
-        self.backgroundColor = UIColor.whiteColor()
+    fileprivate func setupViews() {
+        self.backgroundColor = UIColor.white
         ({(webView:UIWebView) in
             webView.scrollView.showsVerticalScrollIndicator = true
             webView.scrollView.showsHorizontalScrollIndicator = false
             webView.scalesPageToFit = false//禁用缩放
             webView.tag = 1
-            webView.backgroundColor = UIColor.whiteColor()
-            webView.paginationBreakingMode = UIWebPaginationBreakingMode.Page
-            webView.multipleTouchEnabled = false
+            webView.backgroundColor = UIColor.white
+            webView.paginationBreakingMode = UIWebPaginationBreakingMode.page
+            webView.isMultipleTouchEnabled = false
             webView.scrollView.scrollsToTop = true
             self.addSubview(webView)
-            webView.snp_makeConstraints(closure: { (make) in
+            webView.snp.makeConstraints({ (make) in
                 make.top.left.bottom.right.equalTo(self).offset(0)
             })
             

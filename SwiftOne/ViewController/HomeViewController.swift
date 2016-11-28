@@ -11,11 +11,11 @@ import iCarousel
 import SwiftyJSON
 class HomeViewController: ViewController, RightPullToRefreshViewDataSource,RightPullToRefreshViewDelegate, praiseNumberBtnDelegate {
    
-    private var numberItems = NSInteger()//当前文章数
-    private var readItems = NSMutableDictionary()//保存看过的文章
-    private var lastConfigureViewForItemIndex = NSInteger()//最后展示的Item的下标
-    private var isRefreshing = Bool()//当前是否是在刷新状态
-    private var rightPullToReshView = RightRefreshView()
+    fileprivate var numberItems = NSInteger()//当前文章数
+    fileprivate var readItems = NSMutableDictionary()//保存看过的文章
+    fileprivate var lastConfigureViewForItemIndex = NSInteger()//最后展示的Item的下标
+    fileprivate var isRefreshing = Bool()//当前是否是在刷新状态
+    fileprivate var rightPullToReshView = RightRefreshView()
     
     
     override func viewDidLoad() {
@@ -33,9 +33,9 @@ class HomeViewController: ViewController, RightPullToRefreshViewDataSource,Right
 //        self.view.addSubview(rightPullToReshView)
 //        
 //        
-//        self.requestHomeContentAtIndex(0)
+        self.requestHomeContentAtIndex(0)
         let homeView = HomeView()
-        homeView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - 64 - CGRectGetHeight((self.tabBarController?.tabBar.frame)!))
+        homeView.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height - 64 - (self.tabBarController?.tabBar.frame)!.height)
         
         self.view.addSubview(homeView)
         
@@ -43,7 +43,7 @@ class HomeViewController: ViewController, RightPullToRefreshViewDataSource,Right
         
     }
     
-    func requestHomeContentAtIndex(index: Int) -> Void {
+    func requestHomeContentAtIndex(_ index: Int) -> Void {
         let homeRequest = NetworkTool()
         homeRequest.requestHomeContentByIndex(index, successBlock: {
             (backMsg) in
@@ -51,8 +51,8 @@ class HomeViewController: ViewController, RightPullToRefreshViewDataSource,Right
 //           var homeModel = HomeModel()
 //            homeModel = backMsg["hpEntity"]
 //            homeModel.Log("")
+            let json = HomeModel.zz_dicToModel((backMsg["hpEntity"] as? [String : AnyObject])!) as? HomeModel
             
-            let json = HomeModel.zz_dicToModel(backMsg["hpEntity"] as! [String : AnyObject]) as? HomeModel
             print("啦啦啦啦啦\(json!.strLastUpdateDate)")
             if self.isRefreshing {
                 self.endRefreshing()
@@ -75,16 +75,16 @@ class HomeViewController: ViewController, RightPullToRefreshViewDataSource,Right
       
     }
     
-    func rightPullRefreshViewDidScrollToLastItem(rightPullRefreshView: RightRefreshView) {
+    func rightPullRefreshViewDidScrollToLastItem(_ rightPullRefreshView: RightRefreshView) {
         
     }
     
-    func numberOfItemsInRightPullRefreshView(rightPullRefreshView: RightRefreshView) -> Int {
+    func numberOfItemsInRightPullRefreshView(_ rightPullRefreshView: RightRefreshView) -> Int {
         return numberItems
         
     }
 
-     func rightPullRefreshView(rightPullRefreshView: RightRefreshView, ViewForitemAtIndex: NSInteger, resuingView: UIView?) -> UIView {
+     func rightPullRefreshView(_ rightPullRefreshView: RightRefreshView, ViewForitemAtIndex: NSInteger, resuingView: UIView?) -> UIView {
 //        return UIView()
 //        let width = CGRectGetWidth(rightPullRefreshView.frame)
 //        let height = CGRectGetHeight(rightPullRefreshView.frame)
@@ -95,7 +95,7 @@ class HomeViewController: ViewController, RightPullToRefreshViewDataSource,Right
         var homeView = HomeView()
         
         if view == nil {
-            view = UIView.init(frame: CGRectMake(0, 0, UIScreen.mainScreen().bounds.size.width, UIScreen.mainScreen().bounds.size.height - 64 - CGRectGetHeight(self.tabBarController!.tabBar.frame)))
+            view = UIView.init(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: UIScreen.main.bounds.size.height - 64 - self.tabBarController!.tabBar.frame.height))
 //            view?.frame = CGRectMake(0, 0, width, height)
             homeView = HomeView.init(frame:view.bounds)
             view?.addSubview(homeView)
@@ -118,13 +118,13 @@ class HomeViewController: ViewController, RightPullToRefreshViewDataSource,Right
         return view!
     }
     
-    func rightPullRefreshViewRefrshing(rightPullRefreshView: RightRefreshView) {
+    func rightPullRefreshViewRefrshing(_ rightPullRefreshView: RightRefreshView) {
         
     }
-    func rightPullRefreshView(rightPullRefreshView: RightRefreshView, Index: NSInteger) {
+    func rightPullRefreshView(_ rightPullRefreshView: RightRefreshView, Index: NSInteger) {
         
     }
-    func rightPullRefreshViewCurrentItemAtIndexDidChange(rightPullRefreshView: RightRefreshView) {
+    func rightPullRefreshViewCurrentItemAtIndexDidChange(_ rightPullRefreshView: RightRefreshView) {
         
     }
     func praiseBtn() {
@@ -139,8 +139,8 @@ class HomeViewController: ViewController, RightPullToRefreshViewDataSource,Right
         rightPullToReshView.endRefresh()
     }
     //保存
-    func endRequestHomeContent(homeModel:HomeModel, index:Int) {
-        readItems.setObject(homeModel, forKey: "\(index)")
+    func endRequestHomeContent(_ homeModel:HomeModel, index:Int) {
+        readItems.setObject(homeModel, forKey: "\(index)" as NSCopying)
         rightPullToReshView .reloadItemIndex(index, animated: true)
     }
     

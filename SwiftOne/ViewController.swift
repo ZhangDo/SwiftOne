@@ -15,23 +15,23 @@ class ViewController: UIViewController, iCarouselDataSource,iCarouselDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.whiteColor()
-        self.edgesForExtendedLayout = UIRectEdge.None//设置标题栏不能覆盖VC内容
+        self.view.backgroundColor = UIColor.white
+        self.edgesForExtendedLayout = UIRectEdge()//设置标题栏不能覆盖VC内容
         
         // Do any additional setup after loading the view, typically from a nib.
 //        self.SetNavigationBarShowRightBarButtonItem(true)
     }
     
-    func SetNavigationBarShowRightBarButtonItem(show: Bool) {
+    func SetNavigationBarShowRightBarButtonItem(_ show: Bool) {
 
         self.navigationItem.titleView = UIImageView.init(image: UIImage.init(named: "navLogo"))
         
         if show {
             
-            let shareButton = UIButton.init(frame: CGRectMake(0, 0, 22, 22))
-            shareButton.setImage(UIImage.init(named: "nav_share_btn_normal"), forState: UIControlState.Normal)
-            shareButton.setImage(UIImage.init(named: "nav_share_btn_highlighted"), forState: UIControlState.Highlighted)
-            shareButton.addTarget(self, action: #selector(share), forControlEvents: UIControlEvents.TouchUpInside)
+            let shareButton = UIButton.init(frame: CGRect(x: 0, y: 0, width: 22, height: 22))
+            shareButton.setImage(UIImage.init(named: "nav_share_btn_normal"), for: UIControlState())
+            shareButton.setImage(UIImage.init(named: "nav_share_btn_highlighted"), for: UIControlState.highlighted)
+            shareButton.addTarget(self, action: #selector(share), for: UIControlEvents.touchUpInside)
             
             let rightBar = UIBarButtonItem.init(customView: shareButton)
             self.navigationItem.rightBarButtonItem = rightBar
@@ -44,12 +44,12 @@ class ViewController: UIViewController, iCarouselDataSource,iCarouselDelegate {
         print("点击rightBar")
     }
     
-    func numberOfItemsInCarousel(carousel: iCarousel) -> Int
+    func numberOfItems(in carousel: iCarousel) -> Int
     {
         return 3
     }
     
-    func carousel(carousel: iCarousel, viewForItemAtIndex index: Int, reusingView view: UIView?) -> UIView {
+    func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing view: UIView?) -> UIView {
     
     
         return UIView()

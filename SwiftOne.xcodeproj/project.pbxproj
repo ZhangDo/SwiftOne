@@ -14,7 +14,6 @@
 		C7D7D48F1D586F9B00D67B19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7D48E1D586F9B00D67B19 /* ViewController.swift */; };
 		C7D7D4941D586F9B00D67B19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D7D4931D586F9B00D67B19 /* Assets.xcassets */; };
 		C7D7D4971D586F9B00D67B19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D7D4951D586F9B00D67B19 /* LaunchScreen.storyboard */; };
-		C7D7D4A21D586F9C00D67B19 /* SwiftOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7D4A11D586F9C00D67B19 /* SwiftOneTests.swift */; };
 		C7D7D4AD1D586F9C00D67B19 /* SwiftOneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D7D4AC1D586F9C00D67B19 /* SwiftOneUITests.swift */; };
 		C7D7D4BE1D587A4600D67B19 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D7D4BD1D587A4600D67B19 /* Images.xcassets */; };
 		C7D7D4C11D587B1F00D67B19 /* launch_image640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = C7D7D4C01D587B1F00D67B19 /* launch_image640x1136.png */; };
@@ -64,7 +63,6 @@
 		C7D7D4961D586F9B00D67B19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C7D7D4981D586F9B00D67B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7D7D49D1D586F9C00D67B19 /* SwiftOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C7D7D4A11D586F9C00D67B19 /* SwiftOneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOneTests.swift; sourceTree = "<group>"; };
 		C7D7D4A31D586F9C00D67B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C7D7D4A81D586F9C00D67B19 /* SwiftOneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftOneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D7D4AC1D586F9C00D67B19 /* SwiftOneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftOneUITests.swift; sourceTree = "<group>"; };
@@ -168,7 +166,6 @@
 		C7D7D4A01D586F9C00D67B19 /* SwiftOneTests */ = {
 			isa = PBXGroup;
 			children = (
-				C7D7D4A11D586F9C00D67B19 /* SwiftOneTests.swift */,
 				C7D7D4A31D586F9C00D67B19 /* Info.plist */,
 			);
 			path = SwiftOneTests;
@@ -247,12 +244,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7D7D4B11D586F9C00D67B19 /* Build configuration list for PBXNativeTarget "SwiftOne" */;
 			buildPhases = (
-				9C656023E97AC4A663E51CE1 /* 📦 Check Pods Manifest.lock */,
+				9C656023E97AC4A663E51CE1 /* [CP] Check Pods Manifest.lock */,
 				C7D7D4851D586F9B00D67B19 /* Sources */,
 				C7D7D4861D586F9B00D67B19 /* Frameworks */,
 				C7D7D4871D586F9B00D67B19 /* Resources */,
-				E6196B0F579178470E943C6F /* 📦 Embed Pods Frameworks */,
-				7E175332A339899DC7F710F5 /* 📦 Copy Pods Resources */,
+				E6196B0F579178470E943C6F /* [CP] Embed Pods Frameworks */,
+				7E175332A339899DC7F710F5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -312,15 +309,18 @@
 					C7D7D4881D586F9B00D67B19 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = YBMHVJT2Y7;
+						LastSwiftMigration = 0800;
 					};
 					C7D7D49C1D586F9C00D67B19 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = YBMHVJT2Y7;
+						LastSwiftMigration = 0800;
 						TestTargetID = C7D7D4881D586F9B00D67B19;
 					};
 					C7D7D4A71D586F9C00D67B19 = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = YBMHVJT2Y7;
+						LastSwiftMigration = 0800;
 						TestTargetID = C7D7D4881D586F9B00D67B19;
 					};
 				};
@@ -374,14 +374,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7E175332A339899DC7F710F5 /* 📦 Copy Pods Resources */ = {
+		7E175332A339899DC7F710F5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,29 +389,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftOne/Pods-SwiftOne-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9C656023E97AC4A663E51CE1 /* 📦 Check Pods Manifest.lock */ = {
+		9C656023E97AC4A663E51CE1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		E6196B0F579178470E943C6F /* 📦 Embed Pods Frameworks */ = {
+		E6196B0F579178470E943C6F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,7 +451,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7D7D4A21D586F9C00D67B19 /* SwiftOneTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +585,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MuleZhang.SwiftOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -600,6 +600,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MuleZhang.SwiftOne;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -611,6 +612,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MuleZhang.SwiftOneTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftOne.app/SwiftOne";
 			};
 			name = Debug;
@@ -623,6 +625,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MuleZhang.SwiftOneTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftOne.app/SwiftOne";
 			};
 			name = Release;
@@ -634,6 +637,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MuleZhang.SwiftOneUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SwiftOne;
 			};
 			name = Debug;
@@ -645,6 +649,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.MuleZhang.SwiftOneUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = SwiftOne;
 			};
 			name = Release;

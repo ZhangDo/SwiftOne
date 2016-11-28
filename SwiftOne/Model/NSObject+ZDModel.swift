@@ -13,16 +13,16 @@ import Foundation
  数据类型
  */
 public enum zz_type :Int{
-    case Number
-    case String
-    case Bool
-    case Array
-    case Dictionary
-    case Null
-    case Unknown
+    case number
+    case string
+    case bool
+    case array
+    case dictionary
+    case null
+    case unknown
 }
 
-private let zz_queue = dispatch_queue_create("zz_zzjmodel_queie_serial", DISPATCH_QUEUE_SERIAL)
+private let zz_queue = DispatchQueue(label: "zz_zzjmodel_queie_serial", attributes: [])
 extension NSObject{
     
     /**
@@ -32,7 +32,7 @@ extension NSObject{
      
      - returns: 模型
      */
-    static func zz_objToModel(obj:AnyObject?)->NSObject?{
+    static func zz_objToModel(_ obj:AnyObject?)->NSObject?{
         if let dic = obj as? [String:AnyObject]{
             return zz_dicToModel(dic)
         }
@@ -45,7 +45,7 @@ extension NSObject{
      - parameter dic: 字典
      - returns: 模型
      */
-    static func zz_dicToModel(dic:[String:AnyObject])->NSObject?{
+    static func zz_dicToModel(_ dic:[String:AnyObject])->NSObject?{
         if dic.first == nil {
             return nil
         }
@@ -61,23 +61,23 @@ extension NSObject{
                 }else{
                     //复杂类型
                     let type = t.zz_getType(v)
-                    if type == .Dictionary{
+                    if type == .dictionary{
                         //是一个对象类型
                         if let dic1 = v as? [String : AnyObject]{
-                            if t.respondsToSelector(#selector(NSObject.zz_modelPropertyClass)){
+                            if t.responds(to: #selector(NSObject.zz_modelPropertyClass)){
                                 if let properties = properties{
-                                    if  t.valueForKey(k) == nil{
+                                    if  t.value(forKey: k) == nil{
                                         //初始化
                                         let obj = (properties[k] as! NSObject.Type).init()
                                         t.setValue(obj, forKey: k)
                                     }
                                 }
                             }
-                            if let obj = t.valueForKey(k){
-                                obj.setDicValue(dic1) //有对象就递归
+                            if let obj = t.value(forKey: k){
+                                (obj as AnyObject).setDicValue(dic1) //有对象就递归
                             }
                         }
-                    }else if type == .Array{
+                    }else if type == .array{
                         //数组类型
                         if let arr = v as? [AnyObject]{
                             if !arr.isEmpty {
@@ -85,14 +85,14 @@ extension NSObject{
                                     //数组中的内容是基本类型
                                     t.setValue(arr, forKey: k)
                                 }else{
-                                    if t.zz_getType(arr.first!) == .Dictionary{
+                                    if t.zz_getType(arr.first!) == .dictionary{
                                         //对象数组
                                         var objs:[NSObject] = []
                                         for dic in arr{
                                             if let properties = properties{
                                             let obj = (properties[k] as! NSObject.Type).init()
                                             objs.append(obj)
-                                                dispatch_async(zz_queue) {
+                                                zz_queue.async {
                                                    //串行对列执行
                                                    obj.setDicValue(dic as! [String : AnyObject])
                                                 }
@@ -117,33 +117,33 @@ extension NSObject{
      
      - parameter dic1: 字典
      */
-    func setDicValue(dic1:[String : AnyObject]){
+    func setDicValue(_ dic1:[String : AnyObject]){
         for (k,v) in dic1{
             
             if self.zz_getVariableWithClass(self.classForCoder, varName: k){
                 //判断是否存在这个属性
                 if self.zz_isBasic(self.zz_getType(v)){
                     //设置基本类型
-                    if self.zz_getType(v) == .Bool{
+                    if self.zz_getType(v) == .bool{
                         //TODO: -Bool类型怎么处理  不懂
 //                      self.setValue(Bool(v as! NSNumber), forKey: k)
                         
                     }else{
                         self.setValue(v, forKey: k)
                     }
-                }else if self.zz_getType(v) == .Dictionary{
+                }else if self.zz_getType(v) == .dictionary{
                     if let dic1 = v as? [String : AnyObject]{
-                        if self.respondsToSelector(#selector(NSObject.zz_modelPropertyClass)){
+                        if self.responds(to: #selector(NSObject.zz_modelPropertyClass)){
                             if let properties = self.zz_modelPropertyClass(){
-                                if  self.valueForKey(k) == nil{
+                                if  self.value(forKey: k) == nil{
                                     //初始化
                                     let obj = (properties[k] as! NSObject.Type).init()
                                     self.setValue(obj, forKey: k)
                                 }
                             }
                         }
-                        if let obj = self.valueForKey(k){
-                            obj.setDicValue(dic1) //递归
+                        if let obj = self.value(forKey: k){
+                            (obj as AnyObject).setDicValue(dic1) //递归
                         }
                     }
                 }
@@ -160,24 +160,24 @@ extension NSObject{
      
      - returns: 类型
      */
-     private func zz_getType(v:AnyObject)->zz_type{
+     fileprivate func zz_getType(_ v:AnyObject)->zz_type{
         switch v{
         case let number as NSNumber:
             if number.zz_isBool {
-                return .Bool
+                return .bool
             } else {
-                return .Number
+                return .number
             }
         case _ as String:
-            return .String
+            return .string
         case _ as NSNull:
-            return .Null
+            return .null
         case _ as [AnyObject]:
-            return .Array
+            return .array
         case _ as [String : AnyObject]:
-            return .Dictionary
+            return .dictionary
         default:
-            return .Unknown
+            return .unknown
         }
     }
     
@@ -189,8 +189,8 @@ extension NSObject{
      
      - returns: true/false
      */
-    private func zz_isBasic(type:zz_type)->Bool{
-        if type == .Bool || type == .String || type == .Number {
+    fileprivate func zz_isBasic(_ type:zz_type)->Bool{
+        if type == .bool || type == .string || type == .number {
             return true
         }
         return false
@@ -213,12 +213,12 @@ extension NSObject{
      
      - returns: bool
      */
-    func zz_getVariableWithClass(cla:AnyClass , varName:String)->Bool{
+    func zz_getVariableWithClass(_ cla:AnyClass , varName:String)->Bool{
         var outCount:UInt32 = 0
         let ivars = class_copyIvarList(cla, &outCount)
         for i in 0..<outCount{
-            let property = ivars[Int(i)]
-            let keyName = String.fromCString(ivar_getName(property))
+            let property = ivars?[Int(i)]
+            let keyName = String(cString: ivar_getName(property))
             if keyName == varName{
                 free(ivars)
                 return true
@@ -230,17 +230,17 @@ extension NSObject{
     
 }
 
-private let zz_trueNumber = NSNumber(bool: true)
-private let zz_falseNumber = NSNumber(bool: false)
-private let zz_trueObjCType = String.fromCString(zz_trueNumber.objCType)
-private let zz_falseObjCType = String.fromCString(zz_falseNumber.objCType)
+private let zz_trueNumber = NSNumber(value: true as Bool)
+private let zz_falseNumber = NSNumber(value: false as Bool)
+private let zz_trueObjCType = String(cString: zz_trueNumber.objCType)
+private let zz_falseObjCType = String(cString: zz_falseNumber.objCType)
 // MARK: - 判断是否为bool
 extension NSNumber {
     var zz_isBool:Bool {
         get {
-            let objCType = String.fromCString(self.objCType)
-            if (self.compare(zz_trueNumber) == NSComparisonResult.OrderedSame && objCType == zz_trueObjCType)
-                || (self.compare(zz_falseNumber) == NSComparisonResult.OrderedSame && objCType == zz_falseObjCType){
+            let objCType = String(cString: self.objCType)
+            if (self.compare(zz_trueNumber) == ComparisonResult.orderedSame && objCType == zz_trueObjCType)
+                || (self.compare(zz_falseNumber) == ComparisonResult.orderedSame && objCType == zz_falseObjCType){
                     return true
             } else {
                 return false

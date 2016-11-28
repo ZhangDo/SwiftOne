@@ -1,24 +1,24 @@
 PODS:
-  - Alamofire (3.4.0)
-  - iCarousel (1.8.2)
-  - Kingfisher (2.4.1)
-  - SnapKit (0.15.0)
-  - SwiftyJSON (2.3.2)
+  - Alamofire (4.2.0)
+  - iCarousel (1.8.3)
+  - Kingfisher (3.2.1)
+  - SnapKit (3.0.2)
+  - SwiftyJSON (3.1.3)
 
 DEPENDENCIES:
-  - Alamofire (~> 3.0)
-  - iCarousel (~> 1.8.1)
-  - Kingfisher (~> 2.4)
-  - SnapKit (~> 0.15.0)
-  - SwiftyJSON
+  - Alamofire (~> 4.2.0)
+  - iCarousel (~> 1.8.3)
+  - Kingfisher (~> 3.2.1)
+  - SnapKit (~> 3.0.2)
+  - SwiftyJSON (~> 3.1.3)
 
 SPEC CHECKSUMS:
-  Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
-  iCarousel: 67c8a43da5a46795b56aadfc96cd36a16f6149b2
-  Kingfisher: 41aed5b6c1ed8fa98cf6d75283ce89cf7890f517
-  SnapKit: 4962eed2ee18e48cbd2b2292fffc57efe7235f87
-  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  Kingfisher: 64ef28c6d3d6f344e3ae2d7f5c9da80439505d99
+  SnapKit: 2e456761aa92d4d4067a7a5594c18769d451a8ad
+  SwiftyJSON: 38a8ea2006779c0fc4c310cb2ee8195327740faf
 
-PODFILE CHECKSUM: b89bde55d71cf7df26519d5cf9932d97a662e1b5
+PODFILE CHECKSUM: e0ff24cc092d6c8f1075aa892050c221e9e00233
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.1.1

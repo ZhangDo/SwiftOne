@@ -34,9 +34,9 @@ class HomeModel: NSObject {
     var sWebLk: String?
     var strPn: String?
     var wImgUrl: String?
-    private static let debug = true
+    fileprivate static let debug = true
     
-    class func Log(value: Any, fileName: String = #file, line: Int32 = #line) {
+    class func Log(_ value: Any, fileName: String = #file, line: Int32 = #line) {
         if debug {
             print("\n\n====================Debug=====================")
         }
