@@ -9,6 +9,7 @@
 import UIKit
 import iCarousel
 import SwiftyJSON
+
 class HomeViewController: ViewController, RightPullToRefreshViewDataSource,RightPullToRefreshViewDelegate, praiseNumberBtnDelegate {
    
     fileprivate var numberItems = NSInteger()//当前文章数

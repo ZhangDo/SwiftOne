@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ObjectMapper.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-SwiftOne.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,7 +42,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0027B70DA3C6CBEA20402EE39C17753D</key>
+		<key>0BA4732B20CBFF6EDA0AF2F49830D215</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1E671B9E3F5A00E7DB52EA6F0BCBFF78</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>48609B0E5589C8C40B87AE8EDE3847B0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +62,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A7D037CA120AFA571A717D084A128291</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>B5A413ED5D93DE10374AA9BFCD93D056</key>
+		<key>B43918AB915242B851ABEFB5D70BE0AD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
